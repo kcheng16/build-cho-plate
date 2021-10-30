@@ -16,6 +16,10 @@ li {
 #food-bank {
   background-color:#333;
   padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  box-sizing: content-box;
+  width: 20%;
 }
 
 #food-bank > li > img {
@@ -35,9 +39,17 @@ li {
   opacity: 0.5;
 }
 
-
-#plate-container {
+#plate-ul {
   display: relative;
+  background-color: yellow;
+  width: 500px;
+  height: 500px;
+}
+#plate-ul > li > img {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  width: 100px;
 }
 
 #plate-container > #plate {

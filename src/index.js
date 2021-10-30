@@ -18,7 +18,7 @@ var plate = document.getElementById("plate");
 let li, img;
 level[currentLevel].food.forEach(itemName => {
   li = document.createElement("li");
-  li.innerText = itemName;
+  // li.innerText = itemName;
   li.setAttribute('draggable', true);
   li.setAttribute('class', 'draggable');
   
@@ -44,11 +44,19 @@ level[currentLevel].food.forEach(itemName => {
       draggable.classList.remove('dragging');
     });
   });
-  //Drop onto plate======================================
-  plate.addEventListener( 'dragover', (e) => {
+
+  //Drop onto plate or food bank======================================
+  foodBank.addEventListener('dragover', e => {
     e.preventDefault();
-    let draggable = document.querySelector('.dragging');
-    plate.appendChild(draggable);
+    let draggingEle = document.querySelector('.dragging');
+    foodBank.appendChild(draggingEle);
+  });
+
+  let plateUl = document.getElementById('plate-ul');
+  plateUl.addEventListener('dragover', e => {
+    e.preventDefault();
+    let draggingEle2 = document.querySelector('.dragging');
+    plateUl.appendChild(draggingEle2);
   });
 
   //Eat food================================================
