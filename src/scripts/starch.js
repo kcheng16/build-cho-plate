@@ -1,67 +1,60 @@
 const starch = {
   
-  whiteRice: { //20451
-    name: "white rice",
+  'white rice': { //20451
     size: "1cup",
     kcal: 242,
     carb: 5,
-    //img: http://clipart-library.com/new_gallery/79-799184_input-bowl-of-rice-3.png;
+    img: ''
+    // img: 'http://clipart-library.com/new_gallery/79-799184_input-bowl-of-rice-3.png',
   },
 
-  whiteBread: { //18967
-    name: "white bread",
+  'white bread': { //18967
     size: "1slice",
     kcal: 66,
     carb: 1,
-    // img: 
+    img: 'http://clipart-library.com/newhp/565-5655025_first-communion-objects-clip-art-bread-clip-art.png',
   },
 
-  refriedBeans: {//16103
-    name: "refried beans",
+  "refried beans": {//16103
     kcal: 214,
     carb: 3,
     size: "1cup",
-    // img: 
+    img: 'http://clipart-library.com/newhp/refried-beans-mexican-cuisine-pinto-bean-tex-mex-mung-bean.jpg', 
   },
 
-  spaghetti: {//36630
-    name: "spaghetti with meat sauce",
+  "spaghetti with meat sauce": {//36630
     kcal: 670,
     carb: 7,
     size: "554g",
-    // img: 
+    img: 'http://clipart-library.com/img/1988623.png'
   },
 
-  spaghettiHalf: {//36630
-    name: "half spaghetti with meat sauce",
+  "half spaghetti with meat sauce": {//36630
     kcal: 335,
     carb: 4,
     size: "277g",
-    // img: 
+    img: 'http://clipart-library.com/images/rinprB8iR.jpg'
   },
   
-  bakedPotato: {//170112
-    name: "baked potato",
+  "baked potato": {//170112
     kcal: 124,
     carb: 3,
     size: "1 potato (156g)",
-    //img: 
+    img: 'http://clipart-library.com/image_gallery/n1355303.gif'
   },
 
-  blueberryMuffin: {//
-    name: "blueberry muffin",
+  "blueberry muffin": {//
     kcal: 424,
     carb: 6,
     size: "1 medium (113g)",
-    //img: 
+    img: 'http://clipart-library.com/newhp/31-314197_blueberry-muffin-blueberry-muffins-transparent-background-clipart.png'
   },
 
-  bagel: {//18274
-    name: "wheat bagel",
+  "wheat bagel": {//18274
     kcal: 245,
     carb: 5,
     size: "1 bagel (98g)",
-    //img: 
+    img: 'http://clipart-library.com/data_images/64737.jpg'
   },
 
   // {//
