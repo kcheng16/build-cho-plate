@@ -1,11 +1,11 @@
 const level = {
 
-  level1: {
+  1: {
     food: ["white rice", "blueberry muffin", "wheat bagel"],
     carbMax: 5,
   },
 
-  level2: {
+  2: {
     food: ["white rice", "baked potato", "spaghetti with meat sauce", "half spaghetti with meat sauce"],
     carbMax: 5,
   }
