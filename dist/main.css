@@ -18,3 +18,8 @@ li {
   width: 100px;
   height: 100px;
 }
+
+.plate {
+  width: 700px;
+  height: auto;
+}
