@@ -5,6 +5,10 @@
   background: red;
 }
 
+body {
+  margin: 0;
+}
+
 #main {
   color: blue;
 }
@@ -13,10 +17,30 @@ li {
   list-style-type: none;
 }
 
+#food-bank {
+  background-color: #333;
+  padding: 10px;
+}
+
 #food-bank > li > img {
   display: flex;
   width: 100px;
   height: 100px;
+}
+
+.draggable {
+  padding: 10px;
+  background-color: white;
+  border: 1px solid black;
+  cursor: move;
+}
+
+.dragging {
+  opacity: 0.5;
+}
+
+#plate-container {
+  display: relative;
 }
 
 #plate-container > #plate {
