@@ -19,7 +19,7 @@ li {
   height: 100px;
 }
 
-.plate {
+#plate-container > #plate {
   width: 700px;
   height: auto;
 }

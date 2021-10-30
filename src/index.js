@@ -14,6 +14,7 @@ const foodBank = document.getElementById("food-bank");
 var currentLevel = 1;
 var carbMax = level[currentLevel].carbMax;
 var carbCount = 0;
+var plate = document.getElementById("plate");
 
 level[currentLevel].food.forEach(itemName => {
     let li = document.createElement("li");
@@ -27,21 +28,24 @@ level[currentLevel].food.forEach(itemName => {
     }
   })
 
-  //Eat food===================
-  const eatButton = document.getElementById("eat-food")
+  //Eat food================================================
+  const eatButton = document.getElementById("eat-food");
+
   eatButton.addEventListener("click", function(){ 
     if (carbCount <= carbMax){
-      console.log(currentLevel);
-      console.log(carbMax);
-
       currentLevel += 1;
       carbMax = level[currentLevel].carbMax;
-      
-      console.log(currentLevel);
-      console.log(carbMax);
       //need to add: empty the plate, reset nutr facts, render food bank
     }
   });
   
-  //
+  //Clear plate/empty <img>: <li>=========================
+  const clearPlate = document.getElementById("clear-plate");
+
+  clearPlate.addEventListener("click", function (){
+    plateUl = document.getElementById("plate-ul");
+    plate.removeChild(plateUl);
+  })
+
+  //=======================================================
 });
