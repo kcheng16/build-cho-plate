@@ -2,6 +2,10 @@
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/carbcount.css ***!
   \********************************************************************************************************/
 .carb-count {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
   border: 10px black solid;
   background-color: green;
   width: 200px;
@@ -40,24 +44,35 @@
   height: 100px;
 }
 
-/*!***********************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/foodbank.css (1) ***!
-  \***********************************************************************************************************/
+/*!****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/plate.css ***!
+  \****************************************************************************************************/
 
-#food-bank {
-  background-color:#333;
-  padding: 10px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  /* box-sizing: content-box; */
+#plate-container > #plate {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 700px;
+  height: auto;
+}
+
+#plate-ul {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: yellow;
+  width: 500px;
+  height: 500px;
+}
+
+#plate-ul > li > img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  flex: 33.3%;  
   width: 20%;
 }
 
-#food-bank > li > img {
-  display: flex;
-  width:  100px;
-  height: 100px;
-}
 
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!

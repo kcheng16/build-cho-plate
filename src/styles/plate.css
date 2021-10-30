@@ -1,17 +1,26 @@
 
 #plate-container > #plate {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
   width: 700px;
   height: auto;
 }
 
 #plate-ul {
-  display: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   background-color: yellow;
   width: 500px;
   height: 500px;
 }
 
 #plate-ul > li > img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
   flex: 33.3%;  
   width: 20%;
 }
+

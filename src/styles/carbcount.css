@@ -1,4 +1,8 @@
 .carb-count {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
   border: 10px black solid;
   background-color: green;
   width: 200px;

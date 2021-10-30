@@ -8,4 +8,10 @@ class carbCount{
   countCarbs () {
     this.total += this.carbCount;
   }
+
+  handleClick (e) {
+    
+  }
 }
+
+export default carbCount

@@ -2,6 +2,8 @@ import Example from "./scripts/example";
 import food from "./scripts/food";
 import level from "./scripts/level";
 
+import carbCount from "./scripts/carbcount";
+
 document.addEventListener("DOMContentLoaded",() => {
 
 // console.log("Hello World");
@@ -25,6 +27,7 @@ level[currentLevel].food.forEach(itemName => {
   img = document.createElement('img');
   
   if (Object.keys(food).includes(itemName)){
+    img.id = `${itemName}`;
     img.src = food[itemName].img;
     li.appendChild(img);
   }
@@ -55,8 +58,13 @@ level[currentLevel].food.forEach(itemName => {
   let plateUl = document.getElementById('plate-ul');
   plateUl.addEventListener('dragover', e => {
     e.preventDefault();
+    //appending element to plate
     let draggingEle2 = document.querySelector('.dragging');
     plateUl.appendChild(draggingEle2);
+
+    //adding carb to counter
+    let carbCtDiv = document.getElementsByClassName('carb-count');
+    // carbCount += 
   });
 
   //Eat food================================================
@@ -80,7 +88,6 @@ level[currentLevel].food.forEach(itemName => {
 
   //=============================================
 
-  let carbCt = document.getElementsByClassName('carb-count');
-
+  
 
 });
