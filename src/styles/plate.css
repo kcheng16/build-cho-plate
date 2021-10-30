@@ -1,0 +1,17 @@
+
+#plate-container > #plate {
+  width: 700px;
+  height: auto;
+}
+
+#plate-ul {
+  display: relative;
+  background-color: yellow;
+  width: 500px;
+  height: 500px;
+}
+
+#plate-ul > li > img {
+  flex: 33.3%;  
+  width: 20%;
+}

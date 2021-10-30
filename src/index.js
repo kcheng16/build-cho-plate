@@ -78,5 +78,9 @@ level[currentLevel].food.forEach(itemName => {
     plate.removeChild(plateUl);
   });
 
-  //=======================================================
+  //=============================================
+
+  let carbCt = document.getElementsByClassName('carb-count');
+
+
 });

@@ -1,0 +1,11 @@
+
+.draggable {
+  padding: 10px;
+  background-color: white;
+  border: 1px solid black;
+  cursor: move;
+}
+
+.dragging {
+  opacity: 0.5;
+}
