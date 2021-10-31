@@ -16,11 +16,11 @@ var currentLevel = 1;
 var carbMax = level[currentLevel].carbMax;
 var carbCount = 0;
 var plate = document.getElementById("plate");
+var kcal = 0;
 
 let li, img;
 level[currentLevel].food.forEach(itemName => {
   li = document.createElement("li");
-  // li.innerText = itemName;
   li.setAttribute('draggable', true);
   li.setAttribute('class', 'draggable');
   
@@ -68,11 +68,16 @@ level[currentLevel].food.forEach(itemName => {
     plateUl.appendChild(draggingEle2);
     
     let foodId = draggingEle2.firstChild.id;
-    
+
     //adding carb to counter
     let carbCtDiv = document.getElementsByClassName('carb-count');
     carbCount += food[foodId].carb;
     carbCtDiv[0].innerText = carbCount;
+
+    //adding kcal
+    let kcalDiv = document.getElementsByClassName('kcal');
+    kcal += food[foodId].kcal;
+    kcalDiv[0].innerText = kcal;
   });
 
   //Eat food================================================
@@ -94,8 +99,8 @@ level[currentLevel].food.forEach(itemName => {
     plate.removeChild(plateUl);
   });
 
-  //=============================================
-
+  //Carb Max========================================
+  const carbMaxDiv = document.getElementsByClassName('carb-max');
+  carbMaxDiv[0].innerText = carbMax;
   
-
 });
