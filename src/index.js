@@ -2,7 +2,7 @@ import Example from "./scripts/example";
 import food from "./scripts/food";
 import level from "./scripts/level";
 
-import carbCount from "./scripts/carbcount";
+// import carbCount from "./scripts/carbcount";
 
 document.addEventListener("DOMContentLoaded",() => {
 

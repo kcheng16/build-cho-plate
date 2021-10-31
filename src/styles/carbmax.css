@@ -1,5 +1,7 @@
 .carb-max {
-  width: 500px;
-  height: 500px;
+  display: block;
+  position: relative;
+  width: 200px;
+  height: 200px;
   background-color: orangered;
 }

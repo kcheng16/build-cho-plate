@@ -30,7 +30,7 @@
   \*******************************************************************************************************/
 
 #food-bank {
-  background-color:#333;
+  background-image: url("/images/picnic-blanket.png");
   padding: 10px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -84,8 +84,10 @@
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/carbmax.css ***!
   \******************************************************************************************************/
 .carb-max {
-  width: 500px;
-  height: 500px;
+  display: block;
+  position: relative;
+  width: 200px;
+  height: 200px;
   background-color: orangered;
 }
 /*!***************************************************************************************************!*\
@@ -117,7 +119,7 @@
 }
 
 body {
-  margin: 0;
+  background-image: url("./../images/background.png");
 }
 
 #main {
