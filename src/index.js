@@ -100,7 +100,16 @@ level[currentLevel].food.forEach(itemName => {
       plateUl.children[i].remove();
       foodBank.appendChild(removed);
     }
+    console.log("hello");
+    carbCount = 0;
+    kcal = 0;
     
+    let kcalDiv = document.getElementsByClassName('kcal');
+    kcalDiv[0].innerText = kcal;
+
+    let carbCtDiv = document.getElementsByClassName('carb-count');
+    carbCtDiv[0].innerText = carbCount;
+
   });
 
   //Carb Max========================================
