@@ -62,19 +62,19 @@ level[currentLevel].food.forEach(itemName => {
     e.dataTransfer.dropEffect = 'move';
   });
 
+  //appending element to plate
   plateUl.addEventListener('drop', e => {
-    //appending element to plate
     let draggingEle2 = document.querySelector('.dragging');
     plateUl.appendChild(draggingEle2);
     
     let foodId = draggingEle2.firstChild.id;
 
-    //adding carb to counter
+    //=====adding carb to counter
     let carbCtDiv = document.getElementsByClassName('carb-count');
     carbCount += food[foodId].carb;
     carbCtDiv[0].innerText = carbCount;
 
-    //adding kcal
+    //=====adding kcal
     let kcalDiv = document.getElementsByClassName('kcal');
     kcal += food[foodId].kcal;
     kcalDiv[0].innerText = kcal;
@@ -100,10 +100,9 @@ level[currentLevel].food.forEach(itemName => {
       plateUl.children[i].remove();
       foodBank.appendChild(removed);
     }
-    console.log("hello");
     carbCount = 0;
     kcal = 0;
-    
+
     let kcalDiv = document.getElementsByClassName('kcal');
     kcalDiv[0].innerText = kcal;
 

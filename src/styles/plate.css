@@ -9,11 +9,12 @@
 
 #plate-ul {
   position: relative;
-  bottom: 300px;
-  left: 1000px;
-  opacity: 50%;
-  background-color: yellow;
-  width: 300px;
+  top: -300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 600px;
   height: 200px;
   transform: rotate(180deg);
 }
