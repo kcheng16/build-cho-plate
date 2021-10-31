@@ -1,7 +1,13 @@
 .carb-max {
-  display: block;
-  position: relative;
-  width: 200px;
-  height: 200px;
-  background-color: orangered;
+  background-image: url("/images/carbmax-border.png");
+  background-size: 100%;
+
+  font-weight: bolder;
+  font-size: 120px;
+  color: rgb(235, 94, 0);
+
+  padding: 90px;
+  margin: auto;
+  width: 100px;
+  height: 100px;
 }
