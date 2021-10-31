@@ -54,17 +54,25 @@ level[currentLevel].food.forEach(itemName => {
     let draggingEle = document.querySelector('.dragging');
     foodBank.appendChild(draggingEle);
   });
-
+  
   let plateUl = document.getElementById('plate-ul');
+
   plateUl.addEventListener('dragover', e => {
     e.preventDefault();
+    e.dataTransfer.dropEffect = 'move';
+  });
+
+  plateUl.addEventListener('drop', e => {
     //appending element to plate
     let draggingEle2 = document.querySelector('.dragging');
     plateUl.appendChild(draggingEle2);
-
+    
+    let foodId = draggingEle2.firstChild.id;
+    
     //adding carb to counter
     let carbCtDiv = document.getElementsByClassName('carb-count');
-    // carbCount += 
+    carbCount += food[foodId].carb;
+    carbCtDiv[0].innerText = carbCount;
   });
 
   //Eat food================================================
