@@ -95,8 +95,12 @@ level[currentLevel].food.forEach(itemName => {
   const clearPlate = document.getElementById("clear-plate");
 
   clearPlate.addEventListener("click", function (){
-    plateUl = document.getElementById("plate-ul");
-    plate.removeChild(plateUl);
+    for (let i = plateUl.children.length - 1; i >= 0; i--) {
+      let removed = plateUl.children[i]
+      plateUl.children[i].remove();
+      foodBank.appendChild(removed);
+    }
+    
   });
 
   //Carb Max========================================

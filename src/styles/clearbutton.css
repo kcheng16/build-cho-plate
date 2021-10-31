@@ -1,0 +1,9 @@
+#clear-plate {
+  font-size: large;
+  font-weight: 1000;
+  color: rgb(238, 234, 13);
+  width: 200px;
+  height: 100px;
+  background-color: rgb(238, 14, 238);
+  border: rgb(255, 17, 0) solid 10px;
+}
