@@ -16,8 +16,6 @@
 .maxcarbtitle {
   display: flex;
   justify-content: center;
+  height: 150px;
 }
 
-.maxcarbtitle > h2{
-  background-color: yellow;
-}
