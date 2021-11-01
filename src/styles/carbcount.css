@@ -1,14 +1,20 @@
 .carb-count {
-  background-image: url("/images/number-counter.png");
+  /* background-image: url("/images/number-counter.png");
   background-repeat: no-repeat;
   background-position: center; 
-  background-size: 340px;
+  background-size: 150px; */
 
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
+  position: absolute;
+  top: 21%;
+  left: 67%;
   
-  font-size: 1000%;
+  font-size: 500%;
   text-align: center;
 }
 
+#carbctimg {
+  position: absolute;
+  top: 18%;
+  left: 60%;
+  width: 17%;
+}

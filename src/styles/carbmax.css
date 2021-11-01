@@ -1,27 +1,36 @@
 .carb-max {
-  background-image: url("/images/carbmax-border.png");
-  background-size: 100%;
+  /* background-image: url("/images/maxcarb.png");
+  background-size: 30%;
+  background-repeat: no-repeat; */
 
-  font-weight: bolder;
-  font-size: 120px;
-  text-align: center;
-  color: rgb(235, 94, 0);
+  font-size: 500%;
+  color: rgb(0, 0, 0);
 
   padding: 90px;
   margin: auto;
-  width: 100px;
-  height: 100px;
+  width: 500px;
+  height: 500px;
 
+  position: absolute;
+  top: 11%;
+  left: 31%;
 }
 
-.maxcarbtitle {
+#maxcarb {
+  position: relative;
+  left: 30%;
+  width: 18%;
+}
+
+/* .maxcarbtitle {
   display: flex;
   justify-content: center;
   height: 150px;
-}
+} */
 
-.maxcarbtitle > img {
+/* .maxcarbtitle > img {
   position: relative;
-  top: 115px;
-}
+  top: -25px;
+
+} */
 
