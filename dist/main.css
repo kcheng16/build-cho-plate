@@ -34,6 +34,8 @@
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/foodbank.css ***!
   \*******************************************************************************************************/
 .food-bank-title {
+  position: relative;
+  bottom: 470px;
   font-size: 50px;
   font-weight: 900;
 }
@@ -62,6 +64,7 @@
   display: block;
   margin-right: auto;
   margin-left: auto;
+
   width: 700px;
   height: auto;
 }
@@ -99,6 +102,7 @@
 
   font-weight: bolder;
   font-size: 120px;
+  text-align: center;
   color: rgb(235, 94, 0);
 
   padding: 90px;
@@ -112,6 +116,11 @@
   display: flex;
   justify-content: center;
   height: 150px;
+}
+
+.maxcarbtitle > img {
+  position: relative;
+  top: 115px;
 }
 
 
@@ -139,19 +148,25 @@
   background-color: rgb(238, 14, 238);
   border: rgb(255, 17, 0) solid 10px;
 }
+/*!****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/title.css ***!
+  \****************************************************************************************************/
+#title {
+  position: relative; 
+  left: 50%;
+  transform: translateX(-50%);
+  top: -15px;
+
+  margin: 0px;
+  width: 500px;
+  height: auto;
+}
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
   \*************************************************************************************************************************************/
-#main > h1 {
-  background: red;
-}
-
 body {
   background-image: url("./../images/background.png");
-}
-
-#main {
-  color: blue;
+  background-size: 300px;
 }
 
 li {

@@ -4,6 +4,7 @@
 
   font-weight: bolder;
   font-size: 120px;
+  text-align: center;
   color: rgb(235, 94, 0);
 
   padding: 90px;
@@ -17,5 +18,10 @@
   display: flex;
   justify-content: center;
   height: 150px;
+}
+
+.maxcarbtitle > img {
+  position: relative;
+  top: 115px;
 }
 

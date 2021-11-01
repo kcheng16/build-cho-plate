@@ -1,0 +1,10 @@
+#title {
+  position: relative; 
+  left: 50%;
+  transform: translateX(-50%);
+  top: -15px;
+
+  margin: 0px;
+  width: 500px;
+  height: auto;
+}

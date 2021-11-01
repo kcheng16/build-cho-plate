@@ -1,4 +1,6 @@
 .food-bank-title {
+  position: relative;
+  bottom: 470px;
   font-size: 50px;
   font-weight: 900;
 }
