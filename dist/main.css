@@ -9,7 +9,7 @@
 
   position: absolute;
   top: 23%;
-  left: 60%;
+  left: 59%;
   
   font-size: 500%;
   text-align: center;
@@ -92,8 +92,8 @@
   position: absolute;
 
 
-  background-color: yellow;
-  opacity: 50%;
+  /* background-color: yellow;
+  opacity: 50%; */
   width: 600px;
   height: 200px;
   transform: rotate(180deg);

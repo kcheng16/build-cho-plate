@@ -1,5 +1,20 @@
 const food = {
   
+  'apple': {
+    size: "100g",
+    kcal: 61,
+    carb: 1,
+    img: './images/gala-apple.png'
+  },
+
+  'cereal and milk': { //8013 + 1079
+    size: "1cup + ",
+    kcal: 226, //104 + 122
+    carb: 3, //20 + 12
+    img: './images/cereal-and-milk.png'
+    // img: 'http://clipart-library.com/new_gallery/79-799184_input-bowl-of-rice-3.png',
+  },
+
   'white rice': { //20451
     size: "1cup",
     kcal: 242,
@@ -65,10 +80,9 @@ const food = {
   },
 
   // {//
-  //   name: "",
+  //   size: "",
   //   kcal: ,
   //   carb: ,
-  //   size: "",
   //   //img: 
   // }
 

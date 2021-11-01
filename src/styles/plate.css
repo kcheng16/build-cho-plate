@@ -19,8 +19,8 @@
   position: absolute;
 
 
-  background-color: yellow;
-  opacity: 50%;
+  /* background-color: yellow;
+  opacity: 50%; */
   width: 600px;
   height: 200px;
   transform: rotate(180deg);

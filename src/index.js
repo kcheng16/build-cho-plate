@@ -12,6 +12,7 @@ var carbCount = 0;
 var plate = document.getElementById("plate");
 var kcal = 0;
 
+//populating food bank==========================
 let li, img;
 level[currentLevel].food.forEach(itemName => {
   li = document.createElement("li");
@@ -81,14 +82,35 @@ level[currentLevel].food.forEach(itemName => {
     if (carbCount <= carbMax){
       currentLevel += 1;
       carbMax = level[currentLevel].carbMax;
-      //need to add: empty the plate, reset nutr facts, render food bank
+      //empty the plate===================== 
+      
+      
+      //reset nutr facts===================
+      
+      //render food bank===================
+      level[currentLevel].food.forEach(itemName => {
+        li = document.createElement("li");
+        li.setAttribute('draggable', true);
+        li.setAttribute('class', 'draggable');
+        
+        img = document.createElement('img');
+        
+        if (Object.keys(food).includes(itemName)){
+          img.id = `${itemName}`;
+          img.src = food[itemName].img;
+          li.appendChild(img);
+        }
+        foodBank.appendChild(li);
+      
+        });
+      
     }
   });
   
   //Clear plate/empty <img>: <li>=========================
   const clearPlate = document.getElementById("clear-plate");
 
-  clearPlate.addEventListener("click", function (){
+  const resetPlate = function (){
     for (let i = plateUl.children.length - 1; i >= 0; i--) {
       let removed = plateUl.children[i]
       plateUl.children[i].remove();
@@ -103,10 +125,13 @@ level[currentLevel].food.forEach(itemName => {
     let carbCtDiv = document.getElementsByClassName('carb-count');
     carbCtDiv[0].innerText = carbCount;
 
-  });
+  };
+
+  clearPlate.addEventListener("click", resetPlate());
 
   //Carb Max========================================
   const carbMaxDiv = document.getElementsByClassName('carb-max');
   carbMaxDiv[0].innerText = carbMax;
   
+  //
 });

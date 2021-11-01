@@ -1,7 +1,7 @@
 const level = {
 
   1: {
-    food: ["white rice", "blueberry muffin", "wheat bagel"],
+    food: ['apple', "cereal and milk", "white rice", "blueberry muffin", "wheat bagel", "white bread"],
     carbMax: 3,
   },
 
