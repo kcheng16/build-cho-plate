@@ -1,4 +1,3 @@
-import Example from "./scripts/example";
 import food from "./scripts/food";
 import level from "./scripts/level";
 
@@ -83,9 +82,7 @@ level[currentLevel].food.forEach(itemName => {
       currentLevel += 1;
       carbMax = level[currentLevel].carbMax;
       //empty the plate===================== 
-      
-      
-      //reset nutr facts===================
+      clearPlateFunction();
       
       //render food bank===================
       level[currentLevel].food.forEach(itemName => {
@@ -110,7 +107,8 @@ level[currentLevel].food.forEach(itemName => {
   //Clear plate/empty <img>: <li>=========================
   const clearPlate = document.getElementById("clear-plate");
 
-  const resetPlate = function (){
+  function clearPlateFunction(){
+    console.log("sdfkjhkjhfkjshfkjfhksjhk")
     for (let i = plateUl.children.length - 1; i >= 0; i--) {
       let removed = plateUl.children[i]
       plateUl.children[i].remove();
@@ -127,7 +125,7 @@ level[currentLevel].food.forEach(itemName => {
 
   };
 
-  clearPlate.addEventListener("click", resetPlate());
+  clearPlate.addEventListener("click", clearPlateFunction);
 
   //Carb Max========================================
   const carbMaxDiv = document.getElementsByClassName('carb-max');
