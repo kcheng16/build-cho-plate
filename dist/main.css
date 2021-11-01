@@ -41,11 +41,11 @@
   \*******************************************************************************************************/
 .food-bank-div {
   position: absolute;
-  bottom: 30%;
-
+  bottom: 20%;
+  left: 5%;
   
   height: 40%;
-  width: 17%;
+  width: 25%;
 
   border: solid black 3px;
 
@@ -71,23 +71,29 @@
 /*!****************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/plate.css ***!
   \****************************************************************************************************/
+#plate-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 20%;
+}
 
 #plate-container > #plate {
-  display: block;
+  /* display: block;
   margin-right: auto;
   margin-left: auto;
 
-  width: 700px;
-  height: auto;
+
+  height: auto; */
+  
+  width: 30%;
 }
 
 #plate-ul {
-  position: relative;
-  top: -300px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  position: absolute;
 
+
+  background-color: yellow;
+  opacity: 50%;
   width: 600px;
   height: 200px;
   transform: rotate(180deg);
