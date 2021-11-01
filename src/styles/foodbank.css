@@ -1,13 +1,19 @@
-.food-bank-title {
-  position: relative;
-  bottom: 470px;
-  font-size: 50px;
-  font-weight: 900;
+.food-bank-div {
+  position: absolute;
+  bottom: 30%;
+
+  
+  height: 40%;
+  width: 17%;
+
+  border: solid black 3px;
+
+  background-image: url("/images/picnic-blanket.png");
+  background-size: 50%;
 }
 
 
 #food-bank {
-  background-image: url("/images/picnic-blanket.png");
   padding: 10px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
