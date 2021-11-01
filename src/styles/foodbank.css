@@ -1,3 +1,8 @@
+.food-bank-title {
+  font-size: 50px;
+  font-weight: 900;
+}
+
 
 #food-bank {
   background-image: url("/images/picnic-blanket.png");
@@ -5,7 +10,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   /* box-sizing: content-box; */
-  width: 20%;
+  width: 30%;
 }
 
 #food-bank > li > img {

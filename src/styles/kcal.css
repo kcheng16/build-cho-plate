@@ -1,6 +1,9 @@
 .kcal {
-  width: 500px;
-  height: 500px;
+  position: relative;
+  left: 1400px;
+  bottom: 200px;
+  width: 300px;
+  height: 100px;
   background-color: orchid;
 
 }

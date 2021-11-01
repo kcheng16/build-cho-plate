@@ -10,4 +10,14 @@
   margin: auto;
   width: 100px;
   height: 100px;
+
+}
+
+.maxcarbtitle {
+  display: flex;
+  justify-content: center;
+}
+
+.maxcarbtitle > h2{
+  background-color: yellow;
 }
