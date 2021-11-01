@@ -172,14 +172,13 @@
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/clearbutton.css ***!
   \**********************************************************************************************************/
 #clear-plate {
-  font-size: large;
-  font-weight: 1000;
-  color: rgb(238, 234, 13);
-  width: 200px;
-  height: 100px;
-  background-color: rgb(238, 14, 238);
-  border: rgb(255, 17, 0) solid 10px;
+  width: 5%;
+  height: auto;
+
+  position: absolute ;
+  left: 42%;
 }
+
 /*!****************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/title.css ***!
   \****************************************************************************************************/
@@ -192,6 +191,16 @@
   margin: 0px;
   width: 1500px;
   height: 150px;
+}
+/*!********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/eatbutton.css ***!
+  \********************************************************************************************************/
+#eat-food {
+  width: 5%;
+  height: auto;
+
+  position: absolute ;
+  left: 52%;
 }
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
