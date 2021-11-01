@@ -3,23 +3,18 @@
   background-size: 30%;
   background-repeat: no-repeat; */
 
-  font-size: 500%;
-  color: rgb(0, 0, 0);
-
-  padding: 90px;
-  margin: auto;
-  width: 500px;
-  height: 500px;
-
   position: absolute;
-  top: 11%;
-  left: 31%;
+  top: 23%;
+  left: 60%;
+  font-size: 500%;
+  text-align: center;
 }
 
 #maxcarb {
-  position: relative;
-  left: 30%;
-  width: 18%;
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  width: 12%;
 }
 
 /* .maxcarbtitle {
