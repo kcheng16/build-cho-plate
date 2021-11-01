@@ -151,14 +151,22 @@
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/kcal.css ***!
   \***************************************************************************************************/
 .kcal {
-  position: relative;
-  left: 1400px;
-  bottom: 200px;
-  width: 300px;
-  height: 100px;
-  background-color: orchid;
+  position: absolute;
+  top: 28%;
+  left: 76%;
+  width: 20%;
+  height: 20%;
+
+  font-size: 800%;
 
 
+}
+
+#calorieimg {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  width: 20%;
 }
 /*!**********************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/clearbutton.css ***!
