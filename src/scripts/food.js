@@ -39,7 +39,7 @@ const food = {
     kcal: 335,
     carb: 4,
     size: "277g",
-    img: './images/halfspaghetti.jpg'
+    img: './images/halfspaghetti.png'
   },
   
   "baked potato": {//170112
