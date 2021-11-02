@@ -167,6 +167,12 @@ level[currentLevel].food.forEach(itemName => {
 
     let carbCtDiv = document.getElementsByClassName('carb-count');
     carbCtDiv[0].innerText = carbCount;
+
+    //=======clear nutrition table
+    let nutFact = document.getElementById('facts');
+    for (let i = nutFact.children.length - 1; i >= 1; i--) {
+      nutFact.children[i].remove()
+    }
   };
 
   clearPlate.addEventListener("click", clearPlateFunction);
@@ -175,5 +181,5 @@ level[currentLevel].food.forEach(itemName => {
   const carbMaxDiv = document.getElementsByClassName('carb-max');
   carbMaxDiv[0].innerText = carbMax;
   
-  //
+  
 });

@@ -1,6 +1,6 @@
 #facts {
   position: absolute;
-  right: 8%;
+  right: 5%;
   top: 40%;
 }
 
@@ -8,9 +8,9 @@
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #04AA6D;
-  color: white;
+  background-color: #6ad1ab;
   font-size: x-large;
+  color: rgb(31, 29, 29);
 }
 
 #facts tr:nth-child(even){
