@@ -107,38 +107,26 @@ level[currentLevel].food.forEach(itemName => {
         }
         foodBank.appendChild(li);
         });
+
       //add draggable===========================
+
         foodBank.addEventListener('dragover', e => {
         e.preventDefault();
         let draggingEle = document.querySelector('.dragging');
         foodBank.appendChild(draggingEle);
       });
-      
-      let plateUl = document.getElementById('plate-ul');
 
-      plateUl.addEventListener('dragover', e => {
-        e.preventDefault();
-        e.dataTransfer.dropEffect = 'move';
+      const draggables = document.querySelectorAll('.draggable');
+
+      draggables.forEach(draggable => {
+        draggable.addEventListener('dragstart', () => {
+          draggable.classList.add('dragging');
+        });
+    
+        draggable.addEventListener('dragend', () => {
+          draggable.classList.remove('dragging');
+        });
       });
-
-      //appending element to plate
-      plateUl.addEventListener('drop', e => {
-        let draggingEle2 = document.querySelector('.dragging');
-        plateUl.appendChild(draggingEle2);
-        
-        let foodId = draggingEle2.firstChild.id;
-
-        //=====adding carb to counter
-        let carbCtDiv = document.getElementsByClassName('carb-count');
-        carbCount += food[foodId].carb;
-        carbCtDiv[0].innerText = carbCount;
-
-        //=====adding kcal
-        let kcalDiv = document.getElementsByClassName('kcal');
-        kcal += food[foodId].kcal;
-        kcalDiv[0].innerText = kcal;
-      });
-      //end append + drag=====
     }
   });
   
