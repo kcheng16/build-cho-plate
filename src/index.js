@@ -56,7 +56,7 @@ level[currentLevel].food.forEach(itemName => {
     e.dataTransfer.dropEffect = 'move';
   });
 
-  //appending element to plate
+  //appending element to plate================
   plateUl.addEventListener('drop', e => {
     let draggingEle2 = document.querySelector('.dragging');
     plateUl.appendChild(draggingEle2);
@@ -72,6 +72,26 @@ level[currentLevel].food.forEach(itemName => {
     let kcalDiv = document.getElementsByClassName('kcal');
     kcal += food[foodId].kcal;
     kcalDiv[0].innerText = kcal;
+
+    //==========adding info to table
+    let facts = document.getElementById('facts');
+    let newRow = document.createElement('tr');
+    let newFood = document.createElement('td');
+    let newServing = document.createElement('td');
+    let newCalories = document.createElement('td');
+    let newCarbs = document.createElement('td');
+
+    newFood.innerText = foodId;
+    newServing.innerText = food[foodId].size;
+    newCalories.innerText = food[foodId].kcal;
+    newCarbs.innerText = food[foodId].carb;
+
+    let newData = [newFood, newServing, newCalories, newCarbs];
+
+    newData.forEach(item => newRow.appendChild(item));
+
+    facts.appendChild(newRow);
+
   });
 
   //Eat food================================================

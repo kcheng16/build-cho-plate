@@ -208,6 +208,42 @@
   position: absolute ;
   left: 52%;
 }
+/*!****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/table.css ***!
+  \****************************************************************************************************/
+#facts {
+  position: absolute;
+  right: 8%;
+  top: 40%;
+}
+
+#facts tr {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+  font-size: x-large;
+}
+
+#facts tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+#facts tr:hover {
+  background-color: #ddd;
+}
+
+#facts td, #facts th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#facts tr td {
+  font-weight: 100%;
+  color: black;
+  font-size: larger;
+}
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
   \*************************************************************************************************************************************/
