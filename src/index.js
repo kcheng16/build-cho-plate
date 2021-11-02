@@ -23,6 +23,7 @@ level[currentLevel].food.forEach(itemName => {
   if (Object.keys(food).includes(itemName)){
     img.id = `${itemName}`;
     img.src = food[itemName].img;
+    img.title = `${itemName}`;
     li.appendChild(img);
   }
   foodBank.appendChild(li);
