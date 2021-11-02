@@ -6,7 +6,12 @@ const level = {
   },
 
   2: {
-    food: ["white rice", "baked potato", "spaghetti with meat sauce", "half spaghetti with meat sauce"],
+    food: ['grilled chicken breast', "white rice", "baked potato", "spaghetti with meat sauce", "half spaghetti with meat sauce"],
+    carbMax: 5,
+  },
+
+  3: {
+    food: ['white rice', "refried beans", "baked potato", 'white bread', "half spaghetti with meat sauce"],
     carbMax: 5,
   },
 }

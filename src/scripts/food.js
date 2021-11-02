@@ -12,23 +12,13 @@ const food = {
     kcal: 226, //104 + 122
     carb: 3, //20 + 12
     img: './images/cereal-and-milk.png'
-    // img: 'http://clipart-library.com/new_gallery/79-799184_input-bowl-of-rice-3.png',
   },
 
-  'white rice': { //20451
-    size: "1cup",
-    kcal: 242,
-    carb: 5,
-    img: './images/whiterice.png'
-    // img: 'http://clipart-library.com/new_gallery/79-799184_input-bowl-of-rice-3.png',
-  },
-
-  'white bread': { //18967
-    size: "1slice",
-    kcal: 66,
-    carb: 1,
-    img: './images/whitebread.png'
-    // img: 'http://clipart-library.com/newhp/565-5655025_first-communion-objects-clip-art-bread-clip-art.png',
+  'grilled chicken breast': {
+    size: "1 medium slice",
+    kcal: 124,
+    carb: 0,
+    img: './images/chicken-breast.png'
   },
 
   "refried beans": {//16103
@@ -71,6 +61,22 @@ const food = {
     // img: 'http://clipart-library.com/newhp/31-314197_blueberry-muffin-blueberry-muffins-transparent-background-clipart.png'
   },
 
+  'white rice': { //20451
+    size: "1/2cup",
+    kcal: 121,
+    carb: 3,
+    img: './images/whiterice.png'
+    // img: 'http://clipart-library.com/new_gallery/79-799184_input-bowl-of-rice-3.png',
+  },
+
+  'white bread': { //18967
+    size: "1slice",
+    kcal: 66,
+    carb: 1,
+    img: './images/whitebread.png'
+    // img: 'http://clipart-library.com/newhp/565-5655025_first-communion-objects-clip-art-bread-clip-art.png',
+  },
+
   "wheat bagel": {//18274
     kcal: 245,
     carb: 5,
@@ -79,11 +85,11 @@ const food = {
     // img: 'http://clipart-library.com/data_images/64737.jpg'
   },
 
-  // {//
+  // {
   //   size: "",
   //   kcal: ,
   //   carb: ,
-  //   //img: 
+  //   img: 
   // }
 
 }
