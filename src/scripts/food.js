@@ -25,7 +25,7 @@ const food = {
     kcal: 214,
     carb: 3,
     size: "1cup",
-    img: './images/refriedbeans.jpg'
+    img: './images/refriedbeans.png'
   },
 
   "spaghetti with meat sauce": {//36630
@@ -74,7 +74,7 @@ const food = {
     kcal: 245,
     carb: 5,
     size: "1 bagel (98g)",
-    img: './images/wheatbagel.jpg'
+    img: './images/wheatbagel.png'
   },
 
   // {

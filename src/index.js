@@ -147,7 +147,6 @@ level[currentLevel].food.forEach(itemName => {
 
     let carbCtDiv = document.getElementsByClassName('carb-count');
     carbCtDiv[0].innerText = carbCount;
-
   };
 
   clearPlate.addEventListener("click", clearPlateFunction);
