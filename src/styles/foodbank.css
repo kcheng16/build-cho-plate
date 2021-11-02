@@ -1,4 +1,6 @@
 .food-bank-div {
+  
+
   position: absolute;
   bottom: 20%;
   left: 1%;
@@ -14,8 +16,9 @@
 
 
 #food-bank {
-  padding: 10px;
   display: grid;
+  
+  padding: 20px;
   grid-template-columns: repeat(2, 1fr);
   width: 30%;
 
@@ -24,6 +27,8 @@
 }
 
 #food-bank > li {
+  padding: 20px;
+  padding-right: 150px;
   border: 0;
   background-color: transparent;
 }

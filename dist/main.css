@@ -40,6 +40,8 @@
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/foodbank.css ***!
   \*******************************************************************************************************/
 .food-bank-div {
+  
+
   position: absolute;
   bottom: 20%;
   left: 1%;
@@ -55,8 +57,9 @@
 
 
 #food-bank {
-  padding: 10px;
   display: grid;
+  
+  padding: 20px;
   grid-template-columns: repeat(2, 1fr);
   width: 30%;
 
@@ -65,6 +68,8 @@
 }
 
 #food-bank > li {
+  padding: 20px;
+  padding-right: 150px;
   border: 0;
   background-color: transparent;
 }
@@ -219,8 +224,6 @@
 }
 
 #facts tr {
-  /* padding-top: 12px; */
-  /* padding-bottom: 12px; */
   text-align: left;
   background-color: #6ad1ab;
   font-size: x-large;
