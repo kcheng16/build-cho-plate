@@ -1,0 +1,10 @@
+.social {
+  position: fixed;
+  top: 0%;
+  right: 0%;
+}
+
+.social > a > img {
+  width: 25%;
+}
+
