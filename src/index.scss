@@ -10,6 +10,46 @@
 @import "./styles/table.css";
 @import "./styles/socialmedia.css";
 
+
+  #startgamehead {
+    // height: 100%;
+    // width: 100%;
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+    overflow: hidden;
+    background: #C04848;  /* fallback for old browsers */
+    background: linear-gradient(rgb(72,0,72,0.8), rgb(192,72,72,0.8));
+    background: linear-gradient(rgb(72,0,72,0.8), rgb(192,72,72,0.8));
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+  div > #startgame {
+  position: absolute;
+  top: 2%;
+  left: 25%;
+  width: 50%;
+  height: 95%;
+  z-index: 10;
+  
+}
+
+div > #blur{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 9;
+
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 body {
   background-image: url("./../images/background.png");
   background-size: 300px;
