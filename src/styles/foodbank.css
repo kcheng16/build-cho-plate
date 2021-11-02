@@ -17,12 +17,22 @@
   padding: 10px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* box-sizing: content-box; */
   width: 30%;
+
+  border: 0;
+  background-color: transparent;
+}
+
+#food-bank > li {
+  border: 0;
+  background-color: transparent;
 }
 
 #food-bank > li > img {
   display: flex;
   width:  100px;
   height: 100px;
+
+  border: 0;
+  background-color: transparent;
 }

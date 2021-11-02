@@ -58,14 +58,24 @@
   padding: 10px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* box-sizing: content-box; */
   width: 30%;
+
+  border: 0;
+  background-color: transparent;
+}
+
+#food-bank > li {
+  border: 0;
+  background-color: transparent;
 }
 
 #food-bank > li > img {
   display: flex;
   width:  100px;
   height: 100px;
+
+  border: 0;
+  background-color: transparent;
 }
 
 /*!****************************************************************************************************!*\
@@ -78,22 +88,12 @@
 }
 
 #plate-container > #plate {
-  /* display: block;
-  margin-right: auto;
-  margin-left: auto;
-
-
-  height: auto; */
-  
   width: 30%;
 }
 
 #plate-ul {
   position: absolute;
 
-
-  /* background-color: yellow;
-  opacity: 50%; */
   width: 600px;
   height: 200px;
   transform: rotate(180deg);
@@ -102,12 +102,18 @@
 #plate-ul > li {
   display: inline-block;
   transform: rotate(-180deg);
+  width: 30%;
+  border: 0;
+  background-color: transparent;
+  cursor: default;
 }
 
 #plate-ul > li > img {
-  margin: 0;
-  height: 200px;
-  width: 200px;
+  border: 0;
+  width: 80%;
+  height: auto;
+  background-color: transparent;
+  cursor: default;
 }
 
 
