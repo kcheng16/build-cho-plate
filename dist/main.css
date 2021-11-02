@@ -42,7 +42,7 @@
 .food-bank-div {
   position: absolute;
   bottom: 20%;
-  left: 5%;
+  left: 1%;
   
   height: 40%;
   width: 25%;
@@ -213,13 +213,14 @@
   \****************************************************************************************************/
 #facts {
   position: absolute;
-  right: 5%;
-  top: 40%;
+  right: 1%;
+  top: 45%;
+  width: 30%;
 }
 
 #facts tr {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  /* padding-top: 12px; */
+  /* padding-bottom: 12px; */
   text-align: left;
   background-color: #6ad1ab;
   font-size: x-large;
