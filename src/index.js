@@ -68,6 +68,10 @@ level[currentLevel].food.forEach(itemName => {
     carbCount += food[foodId].carb;
     carbCtDiv[0].innerText = carbCount;
 
+    if (parseInt(carbCtDiv[0].innerText) > carbMax){
+      alert('Careful! The carb count is higher than the maximum for this meal.');
+    }
+
     //=====adding kcal
     let kcalDiv = document.getElementsByClassName('kcal');
     kcal += food[foodId].kcal;
@@ -181,5 +185,5 @@ level[currentLevel].food.forEach(itemName => {
   const carbMaxDiv = document.getElementsByClassName('carb-max');
   carbMaxDiv[0].innerText = carbMax;
   
-  
+
 });
