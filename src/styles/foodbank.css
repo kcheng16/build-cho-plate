@@ -8,7 +8,7 @@
   height: 40%;
   width: 25%;
 
-  border: solid black 3px;
+  border: dashed black 3px;
 
   background-image: url("/images/picnic-blanket.png");
   background-size: 50%;
@@ -18,7 +18,6 @@
 #food-bank {
   display: grid;
   
-  padding: 20px;
   grid-template-columns: repeat(2, 1fr);
   width: 30%;
 
