@@ -8,7 +8,6 @@ let startgame = document.getElementById('startgame');
 let blur = document.getElementById('blur');
 
 startgame.addEventListener('click', div => {
-  console.log("IT WORKS");
   startgame.style = 'display: none';
   blur.style = 'display: none';
 });
@@ -116,17 +115,24 @@ level[currentLevel].food.forEach(itemName => {
       currentLevel += 1;
       carbMax = level[currentLevel].carbMax;
 
-      //empty the plate===================== 
+      //============= empty the plate
       clearPlateFunction();
 
-      //clear food bank=====================
+      //==============clear food bank
       for (let i = foodBank.children.length - 1; i >= 0; i--) {
         foodBank.children[i].remove();
       }
-      //set next level 'Carb Max'===================
+      //===========set next level 'Carb Max'
       carbMaxDiv[0].innerText = carbMax;
 
-      //render food bank===================
+      //=======change carb tip
+      let carbtipimg = document.getElementById('carbtip');
+      let number = 1;
+      number += 1;
+
+      carbtipimg.src = `/images/carbtips/carbct-tip-${number}.png`
+
+      //==============render food bank
       level[currentLevel].food.forEach(itemName => {
         li = document.createElement("li");
         li.setAttribute('draggable', true);
@@ -137,10 +143,12 @@ level[currentLevel].food.forEach(itemName => {
         if (Object.keys(food).includes(itemName)){
           img.id = `${itemName}`;
           img.src = food[itemName].img;
+          img.title = `${itemName}`;
+
           li.appendChild(img);
         }
         foodBank.appendChild(li);
-        });
+  });
 
       //add draggable===========================
 
