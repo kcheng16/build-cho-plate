@@ -127,10 +127,8 @@ level[currentLevel].food.forEach(itemName => {
 
       //=======change carb tip
       let carbtipimg = document.getElementById('carbtip');
-      let number = 1;
-      number += 1;
 
-      carbtipimg.src = `/images/carbtips/carbct-tip-${number}.png`
+      carbtipimg.src = `/images/carbtips/carbct-tip-${currentLevel}.png`
 
       //==============render food bank
       level[currentLevel].food.forEach(itemName => {
