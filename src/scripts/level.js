@@ -38,7 +38,9 @@ const level = {
       'white bread', 
       "half spaghetti with meat sauce",
       'broccoli, cooked with oil',
-
+      'roast beef',
+      'fruit salad (peach and pear and apricot and pineapple and cherry)',
+      'butter'
     ],
     carbMax: 5,
   },

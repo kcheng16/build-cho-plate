@@ -1,9 +1,9 @@
 const food = {
-    // {
+    // :{
   //   size: "",
   //   kcal: ,
   //   carb: ,
-  //   img: 
+  //   img: './images/'
   // },
 
   'apple': {
@@ -71,6 +71,13 @@ const food = {
     img: './images/gifs/greeksalad.gif'
   },
 
+  'fruit salad (peach and pear and apricot and pineapple and cherry)' :{
+    size: "1/2c",
+    kcal: 65,
+    carb: 2,
+    img: './images/fruit-salad.png'
+  },
+
   'grilled chicken breast': {
     size: "1 medium slice",
     kcal: 124,
@@ -113,6 +120,13 @@ const food = {
     img: './images/half-orange.png'
   },
 
+  'roast beef':  {
+    size: '1 thick slice (4.5" x 2.5" x3/8")',
+    kcal: 100,
+    carb: 0,
+    img: './images/roastbeef.png'
+  },
+
   'white rice': { //20451
     size: "1/2cup",
     kcal: 121,
@@ -141,11 +155,11 @@ const food = {
     img: './images/wheatbagel.png'
   },
 
-  // {
+  // :{
   //   size: "",
   //   kcal: ,
   //   carb: ,
-  //   img: 
+  //   img: './images/'
   // },
 
 }
