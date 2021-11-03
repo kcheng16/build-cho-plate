@@ -7,6 +7,27 @@ const food = {
     img: './images/gala-apple.png'
   },
 
+  "baked potato": {//170112
+    kcal: 124,
+    carb: 3,
+    size: "1 potato (156g)",
+    img: './images/bakedpotato.gif'
+  },
+
+  'butter': { //1001
+    size: "1 pat (5g)",
+    kcal: 36,
+    carb: 0,
+    img: "./images/butterslice.png"
+  },
+
+  "blueberry muffin": {//
+    kcal: 424,
+    carb: 6,
+    size: "1 medium (113g)",
+    img: './images/blueberrymuffin.png'
+  },
+
   'cereal and milk': { //8013 + 1079
     size: "1cup + 1/2cup",
     kcal: 226, //104 + 122
@@ -19,6 +40,13 @@ const food = {
     kcal: 124,
     carb: 0,
     img: './images/chicken-breast.png'
+  },
+
+  'navel orange': { //9202
+    size: "1each (140g)",
+    kcal: 73,
+    carb: 2,
+    img: './images/navel-orange.png'
   },
 
   "refried beans": {//16103
@@ -42,19 +70,6 @@ const food = {
     img: './images/halfspaghetti.png'
   },
   
-  "baked potato": {//170112
-    kcal: 124,
-    carb: 3,
-    size: "1 potato (156g)",
-    img: './images/bakedpotato.gif'
-  },
-
-  "blueberry muffin": {//
-    kcal: 424,
-    carb: 6,
-    size: "1 medium (113g)",
-    img: './images/blueberrymuffin.png'
-  },
 
   'white rice': { //20451
     size: "1/2cup",
@@ -82,7 +97,7 @@ const food = {
   //   kcal: ,
   //   carb: ,
   //   img: 
-  // }
+  // },
 
 }
 
