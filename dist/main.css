@@ -106,10 +106,11 @@
 }
 
 #plate-ul > li {
-  display: inline-block;
+  display: inline-flex;
   transform: rotate(-180deg);
-  width: 6vw;
-  /* height: 6vh; */
+  width: 2vw;
+  height: 18vh;
+  padding: 7%;
   border: 0;
   background-color: transparent;
   cursor: default;
@@ -123,6 +124,13 @@
   cursor: default;
 }
 
+#plate2 {
+  position: absolute;
+  left: 33%;
+  top: 36%;
+  width: 33vw;
+  height: 26vh;
+}
 
 /*!******************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/carbmax.css ***!
@@ -245,7 +253,7 @@
   \**********************************************************************************************************/
 .social {
   position: fixed;
-  top: 0%;
+  top: 5%;
   right: 5%;
 }
 

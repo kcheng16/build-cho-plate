@@ -65,10 +65,17 @@ level[currentLevel].food.forEach(itemName => {
     e.dataTransfer.dropEffect = 'move';
   });
 
-  //appending element to plate================
+  //appending food-element to plate================
   plateUl.addEventListener('drop', e => {
     let draggingEle2 = document.querySelector('.dragging');
     plateUl.appendChild(draggingEle2);
+
+    if (plateUl.children.length > 4){
+      alert("There's too much food! Here's a second plate.");
+
+      let plate2 = document.getElementById('plate2');
+      plate2.style = 'display: true';
+    }
     
     let foodId = draggingEle2.firstChild.id;
 
@@ -129,7 +136,11 @@ level[currentLevel].food.forEach(itemName => {
       let carbtipimg = document.getElementById('carbtip');
 
       carbtipimg.src = `/images/carbtips/carbct-tip-${currentLevel}.png`
-
+      
+      //=========remove 2nd plate
+      let plate2 = document.getElementById('plate2');
+      plate2.style = 'display: none';
+      
       //==============render food bank
       level[currentLevel].food.forEach(itemName => {
         li = document.createElement("li");
@@ -197,7 +208,7 @@ level[currentLevel].food.forEach(itemName => {
 
   clearPlate.addEventListener("click", clearPlateFunction);
 
-  //Carb Max========================================
+  //Carb Max setting========================================
   const carbMaxDiv = document.getElementsByClassName('carb-max');
   carbMaxDiv[0].innerText = carbMax;
   

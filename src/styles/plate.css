@@ -18,10 +18,11 @@
 }
 
 #plate-ul > li {
-  display: inline-block;
+  display: inline-flex;
   transform: rotate(-180deg);
-  width: 6vw;
-  /* height: 6vh; */
+  width: 2vw;
+  height: 18vh;
+  padding: 7%;
   border: 0;
   background-color: transparent;
   cursor: default;
@@ -35,3 +36,10 @@
   cursor: default;
 }
 
+#plate2 {
+  position: absolute;
+  left: 33%;
+  top: 36%;
+  width: 33vw;
+  height: 26vh;
+}
