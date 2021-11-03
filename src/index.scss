@@ -10,20 +10,7 @@
 @import "./styles/table.css";
 @import "./styles/socialmedia.css";
 @import "./styles/carbtip.css";
-
-  #startgamehead {
-    // height: 100%;
-    // width: 100%;
-    text-align: center;
-    padding-top: 100px;
-    color: white;
-    overflow: hidden;
-    background: #C04848;  /* fallback for old browsers */
-    background: linear-gradient(rgb(72,0,72,0.8), rgb(192,72,72,0.8));
-    background: linear-gradient(rgb(72,0,72,0.8), rgb(192,72,72,0.8));
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+@import "./styles/meal-goal.css";
 
   div > #startgame {
   position: absolute;

@@ -71,7 +71,7 @@ level[currentLevel].food.forEach(itemName => {
     plateUl.appendChild(draggingEle2);
 
     if (plateUl.children.length > 4){
-      alert("There's too much food! Here's a second plate.");
+      alert("There's too much food! Do you need a second plate?");
 
       let plate2 = document.getElementById('plate2');
       plate2.style = 'display: true';
@@ -92,6 +92,15 @@ level[currentLevel].food.forEach(itemName => {
     let kcalDiv = document.getElementsByClassName('kcal');
     kcal += food[foodId].kcal;
     kcalDiv[0].innerText = kcal;
+
+    //======moving meal-goal
+    let mealGoal = document.getElementById('meal-goal');
+
+    mealGoal.style.position = "absolute";
+    mealGoal.style.left = 76+'%';
+    mealGoal.style.top = 20+'%';
+    mealGoal.style.width = 22+'vw';
+    mealGoal.style.height = 21+'vh';
 
     //==========adding info to table
     let facts = document.getElementById('facts');
@@ -135,11 +144,20 @@ level[currentLevel].food.forEach(itemName => {
       //=======change carb tip
       let carbtipimg = document.getElementById('carbtip');
 
-      carbtipimg.src = `/images/carbtips/carbct-tip-${currentLevel}.png`
+      carbtipimg.src = `/images/carbtips/carbct-tip-${currentLevel}.png`;
       
       //=========remove 2nd plate
       let plate2 = document.getElementById('plate2');
       plate2.style = 'display: none';
+
+      //=========display new meal-goal
+      let mealGoal = document.getElementById('meal-goal');
+
+      mealGoal.src = `/images/meal-goals/meal-goal-${currentLevel}.png`;
+      mealGoal.style.top = 38+'%';
+      mealGoal.style.left = 35+'%';
+      mealGoal.style.width = 30+'vw';
+      mealGoal.style.height = 30+'vh';
       
       //==============render food bank
       level[currentLevel].food.forEach(itemName => {
@@ -212,5 +230,14 @@ level[currentLevel].food.forEach(itemName => {
   const carbMaxDiv = document.getElementsByClassName('carb-max');
   carbMaxDiv[0].innerText = carbMax;
   
+  //Move meal-goal on-click=================================
+  // let mealGoal = document.getElementById('meal-goal');
 
+  // mealGoal.addEventListener('click', () => {
+  //   mealGoal.style.position = "absolute";
+  //   mealGoal.style.left = 76+'%';
+  //   mealGoal.style.top = 20+'%';
+  //   mealGoal.style.width = 22+'vw';
+  //   mealGoal.style.height = 21+'vh';
+  // });
 });
