@@ -5,21 +5,23 @@
 }
 
 #plate-container > #plate {
-  width: 30%;
+  width: 33vw;
+  height: 26vh;
 }
 
 #plate-ul {
   position: absolute;
-
-  width: 600px;
-  height: 200px;
+  left: 33%;
+  width: 30vw;
+  height: 20vh;
   transform: rotate(180deg);
 }
 
 #plate-ul > li {
   display: inline-block;
   transform: rotate(-180deg);
-  width: 30%;
+  width: 6vw;
+  /* height: 6vh; */
   border: 0;
   background-color: transparent;
   cursor: default;
@@ -27,7 +29,7 @@
 
 #plate-ul > li > img {
   border: 0;
-  width: 80%;
+  width: 9vw;
   height: auto;
   background-color: transparent;
   cursor: default;

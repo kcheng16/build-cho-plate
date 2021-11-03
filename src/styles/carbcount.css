@@ -5,16 +5,17 @@
   background-size: 150px; */
 
   position: absolute;
-  top: 23%;
-  left: 59%;
+  top: 25%;
+  left: 48%;
   
-  font-size: 500%;
+  font-size: 4vmax;
   text-align: center;
 }
 
 #carbctimg {
   position: absolute;
   top: 20%;
-  left: 55%;
-  width: 12%;
+  left: 41%;
+  width: 17vw;
+  height: 15vh;
 }

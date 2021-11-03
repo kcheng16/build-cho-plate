@@ -1,13 +1,9 @@
 #clear-plate {
   cursor: pointer;
-  width: 5%;
+  width: 5vw;
   height: auto;
 
   position: absolute ;
   left: 42%;
 }
 
-#eat-food {
-  cursor: pointer;
-
-}

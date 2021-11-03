@@ -1,10 +1,10 @@
 .social {
   position: fixed;
   top: 0%;
-  right: 0%;
+  right: 5%;
 }
 
 .social > a > img {
-  width: 25%;
+  width: 6vw;
 }
 

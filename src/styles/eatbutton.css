@@ -1,7 +1,9 @@
 #eat-food {
-  width: 5%;
+  width: 5vw;
   height: auto;
 
   position: absolute ;
   left: 52%;
+
+  cursor: pointer;
 }

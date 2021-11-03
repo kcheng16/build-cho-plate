@@ -1,18 +1,15 @@
 .kcal {
   position: absolute;
-  top: 28%;
-  left: 76%;
-  width: 20%;
-  height: 20%;
+  top: 26%;
+  left: 64%;
 
-  font-size: 800%;
-
-
+  font-size: 3vmax;
 }
 
 #calorieimg {
   position: absolute;
   top: 20%;
-  right: 10%;
-  width: 20%;
+  right: 25%;
+  width: 17vw;
+  height: 15vh;
 }

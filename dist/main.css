@@ -8,18 +8,19 @@
   background-size: 150px; */
 
   position: absolute;
-  top: 23%;
-  left: 59%;
+  top: 25%;
+  left: 48%;
   
-  font-size: 500%;
+  font-size: 4vmax;
   text-align: center;
 }
 
 #carbctimg {
   position: absolute;
   top: 20%;
-  left: 55%;
-  width: 12%;
+  left: 41%;
+  width: 17vw;
+  height: 15vh;
 }
 
 /*!***************************************************************************************************!*\
@@ -42,10 +43,10 @@
 .food-bank-div {
   position: absolute;
   bottom: 20%;
-  left: 1%;
+  left: 5%;
   
-  height: 40%;
-  width: 25%;
+  width: 22vw;
+  height: 40vh;
 
   border: dashed black 3px;
 
@@ -58,23 +59,25 @@
   display: grid;
   
   grid-template-columns: repeat(2, 1fr);
-  width: 30%;
+  width: 18vw;
+  height: 37vh;
 
   border: 0;
   background-color: transparent;
 }
+
 
 #food-bank > li {
   padding: 20px;
-  padding-right: 150px;
   border: 0;
   background-color: transparent;
+
+
 }
 
 #food-bank > li > img {
-  display: flex;
-  width:  100px;
-  height: 100px;
+  width:  4vw;
+  height: 8vh;
 
   border: 0;
   background-color: transparent;
@@ -90,21 +93,23 @@
 }
 
 #plate-container > #plate {
-  width: 30%;
+  width: 33vw;
+  height: 26vh;
 }
 
 #plate-ul {
   position: absolute;
-
-  width: 600px;
-  height: 200px;
+  left: 33%;
+  width: 30vw;
+  height: 20vh;
   transform: rotate(180deg);
 }
 
 #plate-ul > li {
   display: inline-block;
   transform: rotate(-180deg);
-  width: 30%;
+  width: 6vw;
+  /* height: 6vh; */
   border: 0;
   background-color: transparent;
   cursor: default;
@@ -112,7 +117,7 @@
 
 #plate-ul > li > img {
   border: 0;
-  width: 80%;
+  width: 9vw;
   height: auto;
   background-color: transparent;
   cursor: default;
@@ -128,31 +133,20 @@
   background-repeat: no-repeat; */
 
   position: absolute;
-  top: 23%;
-  left: 40%;
+  top: 25%;
+  left: 31%;
   
-  font-size: 500%;
+  font-size: 4vmax;
   text-align: center;
 }
 
 #maxcarb {
   position: absolute;
   top: 20%;
-  left: 35%;
-  width: 12%;
+  left: 24%;
+  width: 17vw;
+  height: 15vh;
 }
-
-/* .maxcarbtitle {
-  display: flex;
-  justify-content: center;
-  height: 150px;
-} */
-
-/* .maxcarbtitle > img {
-  position: relative;
-  top: -25px;
-
-} */
 
 
 /*!***************************************************************************************************!*\
@@ -160,38 +154,32 @@
   \***************************************************************************************************/
 .kcal {
   position: absolute;
-  top: 28%;
-  left: 76%;
-  width: 20%;
-  height: 20%;
+  top: 26%;
+  left: 64%;
 
-  font-size: 800%;
-
-
+  font-size: 3vmax;
 }
 
 #calorieimg {
   position: absolute;
   top: 20%;
-  right: 10%;
-  width: 20%;
+  right: 25%;
+  width: 17vw;
+  height: 15vh;
 }
 /*!**********************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/clearbutton.css ***!
   \**********************************************************************************************************/
 #clear-plate {
   cursor: pointer;
-  width: 5%;
+  width: 5vw;
   height: auto;
 
   position: absolute ;
   left: 42%;
 }
 
-#eat-food {
-  cursor: pointer;
 
-}
 /*!****************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/title.css ***!
   \****************************************************************************************************/
@@ -202,19 +190,22 @@
   top: -15px;
 
   margin: 0px;
-  width: 1500px;
-  height: 150px;
+  width: 60vw;
+  height: 20vh;
 }
 /*!********************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/eatbutton.css ***!
   \********************************************************************************************************/
 #eat-food {
-  width: 5%;
+  width: 5vw;
   height: auto;
 
   position: absolute ;
   left: 52%;
+
+  cursor: pointer;
 }
+
 /*!****************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/table.css ***!
   \****************************************************************************************************/
@@ -222,7 +213,7 @@
   position: absolute;
   right: 1%;
   top: 45%;
-  width: 30%;
+  width: 28vw;
 }
 
 #facts tr {
@@ -246,7 +237,6 @@
 }
 
 #facts tr td {
-  font-weight: 100%;
   color: black;
   font-size: larger;
 }
@@ -256,11 +246,11 @@
 .social {
   position: fixed;
   top: 0%;
-  right: 0%;
+  right: 5%;
 }
 
 .social > a > img {
-  width: 25%;
+  width: 6vw;
 }
 
 
@@ -271,7 +261,8 @@
   position: absolute;
   top: 20%;
   left: 6%;
-  width: 16%;
+  width: 16vw;
+  
 }
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
