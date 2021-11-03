@@ -43,9 +43,9 @@
 .food-bank-div {
   position: absolute;
   bottom: 20%;
-  left: 5%;
+  left: 2%;
   
-  width: 22vw;
+  width: 23vw;
   height: 40vh;
 
   border: dashed black 3px;
@@ -58,7 +58,7 @@
 #food-bank {
   display: grid;
   
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   width: 18vw;
   height: 37vh;
 

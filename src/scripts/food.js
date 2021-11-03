@@ -1,10 +1,23 @@
 const food = {
-  
+    // {
+  //   size: "",
+  //   kcal: ,
+  //   carb: ,
+  //   img: 
+  // },
+
   'apple': {
     size: "100g",
     kcal: 61,
     carb: 1,
     img: './images/gala-apple.png'
+  },
+
+  'banana':  {//9040
+    size: "1 banana (115g)",
+    kcal: 113,
+    carb: 3,
+    img: './images/gifs/banana.gif'
   },
 
   "baked potato": {//170112
@@ -14,19 +27,28 @@ const food = {
     img: './images/bakedpotato.gif'
   },
 
+  
   'butter': { //1001
     size: "1 pat (5g)",
     kcal: 36,
     carb: 0,
     img: "./images/butterslice.png"
   },
-
+  
   "blueberry muffin": {//
     kcal: 424,
     carb: 6,
     size: "1 medium (113g)",
     img: './images/blueberrymuffin.png'
   },
+
+  'broccoli, cooked with oil': {
+    size: "1cup",
+    kcal: 98,
+    carb: 1,
+    img: './images/gifs/broccoli.gif'
+  },
+  
 
   'cereal and milk': { //8013 + 1079
     size: "1cup + 1/2cup",
@@ -35,18 +57,25 @@ const food = {
     img: './images/cereal-and-milk.png'
   },
 
+  'egg, hardboiled': {//1129
+    size: "1 large",
+    kcal: 78,
+    carb: 0,
+    img: './images/hardboilegg.png'
+  },
+
+  'greek salad': {
+    size: "1cup",
+    kcal: 44,
+    carb: 4,
+    img: './images/gifs/greeksalad.gif'
+  },
+
   'grilled chicken breast': {
     size: "1 medium slice",
     kcal: 124,
     carb: 0,
     img: './images/chicken-breast.png'
-  },
-
-  'navel orange': { //9202
-    size: "1each (140g)",
-    kcal: 73,
-    carb: 2,
-    img: './images/navel-orange.png'
   },
 
   "refried beans": {//16103
@@ -70,12 +99,32 @@ const food = {
     img: './images/halfspaghetti.png'
   },
   
+  'orange, navel': { //9202
+    size: "1each (140g)",
+    kcal: 73,
+    carb: 2,
+    img: './images/navel-orange.png'
+  },
+
+  'half-orange, navel': { //9202
+    size: "1/2each (70g)",
+    kcal: 37,
+    carb: 1,
+    img: './images/half-orange.png'
+  },
 
   'white rice': { //20451
     size: "1/2cup",
     kcal: 121,
     carb: 3,
     img: './images/whiterice.png'
+  },
+
+  'tuna sandwich': {
+    size: "1 regular sandwich (180g)",
+    kcal: 396,
+    carb: 3,
+    img: './images/tuna-sandwich.png'
   },
 
   'white bread': { //18967
