@@ -175,6 +175,10 @@ level[currentLevel].food.forEach(itemName => {
           li.appendChild(img);
         }
         foodBank.appendChild(li);
+
+      //=========eat food sound
+      let sound = new Audio("/images/sounds/chomp.mp3");
+      sound.play();
   });
 
       //add draggable===========================
@@ -230,14 +234,4 @@ level[currentLevel].food.forEach(itemName => {
   const carbMaxDiv = document.getElementsByClassName('carb-max');
   carbMaxDiv[0].innerText = carbMax;
   
-  //Move meal-goal on-click=================================
-  // let mealGoal = document.getElementById('meal-goal');
-
-  // mealGoal.addEventListener('click', () => {
-  //   mealGoal.style.position = "absolute";
-  //   mealGoal.style.left = 76+'%';
-  //   mealGoal.style.top = 20+'%';
-  //   mealGoal.style.width = 22+'vw';
-  //   mealGoal.style.height = 21+'vh';
-  // });
 });

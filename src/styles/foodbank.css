@@ -15,7 +15,7 @@
 
 #food-bank {
   display: grid;
-  
+
   grid-template-columns: repeat(3, 1fr);
   width: 18vw;
   height: 37vh;

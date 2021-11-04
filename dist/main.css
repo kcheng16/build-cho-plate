@@ -57,7 +57,7 @@
 
 #food-bank {
   display: grid;
-  
+
   grid-template-columns: repeat(3, 1fr);
   width: 18vw;
   height: 37vh;
@@ -293,6 +293,7 @@ div > #startgame {
   width: 50%;
   height: 95%;
   z-index: 10;
+  cursor: pointer;
 }
 
 div > #blur {

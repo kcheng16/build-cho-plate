@@ -12,7 +12,8 @@
 @import "./styles/carbtip.css";
 @import "./styles/meal-goal.css";
 
-  div > #startgame {
+
+div > #startgame {
   position: absolute;
   top: 2%;
   left: 25%;
@@ -20,6 +21,7 @@
   height: 95%;
   z-index: 10;
   
+  cursor: pointer;
 }
 
 div > #blur{
