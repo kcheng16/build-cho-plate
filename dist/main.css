@@ -1,6 +1,3 @@
-/*!********************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/carbcount.css ***!
-  \********************************************************************************************************/
 .carb-count {
   /* background-image: url("/images/number-counter.png");
   background-repeat: no-repeat;
@@ -23,9 +20,6 @@
   height: 15vh;
 }
 
-/*!***************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/drag.css ***!
-  \***************************************************************************************************/
 
 .draggable {
   padding: 10px;
@@ -37,9 +31,6 @@
 .dragging {
   opacity: 0.5;
 }
-/*!*******************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/foodbank.css ***!
-  \*******************************************************************************************************/
 .food-bank-div {
   position: absolute;
   bottom: 20%;
@@ -83,9 +74,6 @@
   background-color: transparent;
 }
 
-/*!****************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/plate.css ***!
-  \****************************************************************************************************/
 #plate-container {
   display: flex;
   justify-content: center;
@@ -132,9 +120,6 @@
   height: 26vh;
 }
 
-/*!******************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/carbmax.css ***!
-  \******************************************************************************************************/
 .carb-max {
   /* background-image: url("/images/maxcarb.png");
   background-size: 30%;
@@ -157,9 +142,6 @@
 }
 
 
-/*!***************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/kcal.css ***!
-  \***************************************************************************************************/
 .kcal {
   position: absolute;
   top: 26%;
@@ -175,9 +157,6 @@
   width: 17vw;
   height: 15vh;
 }
-/*!**********************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/clearbutton.css ***!
-  \**********************************************************************************************************/
 #clear-plate {
   cursor: pointer;
   width: 5vw;
@@ -188,9 +167,6 @@
 }
 
 
-/*!****************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/title.css ***!
-  \****************************************************************************************************/
 #title {
   position: relative; 
   left: 50%;
@@ -201,9 +177,6 @@
   width: 60vw;
   height: 20vh;
 }
-/*!********************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/eatbutton.css ***!
-  \********************************************************************************************************/
 #eat-food {
   width: 5vw;
   height: auto;
@@ -214,9 +187,6 @@
   cursor: pointer;
 }
 
-/*!****************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/table.css ***!
-  \****************************************************************************************************/
 #facts {
   position: absolute;
   right: 1%;
@@ -248,9 +218,6 @@
   color: black;
   font-size: larger;
 }
-/*!**********************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/socialmedia.css ***!
-  \**********************************************************************************************************/
 .social {
   position: fixed;
   top: 5%;
@@ -262,9 +229,6 @@
 }
 
 
-/*!******************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/carbtip.css ***!
-  \******************************************************************************************************/
 #carbtip {
   position: absolute;
   top: 20%;
@@ -272,9 +236,6 @@
   width: 16vw;
   
 }
-/*!********************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/meal-goal.css ***!
-  \********************************************************************************************************/
 #meal-goal {
   position: absolute;
   top: 38%;
@@ -283,36 +244,6 @@
   height: 30vh;
 }
 
-/*!*************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
-  \*************************************************************************************************************************************/
-div > #startgame {
-  position: absolute;
-  top: 2%;
-  left: 25%;
-  width: 50%;
-  height: 95%;
-  z-index: 10;
-  cursor: pointer;
-}
+div>#startgame{position:absolute;top:2%;left:25%;width:50%;height:95%;z-index:10;cursor:pointer}div>#blur{position:absolute;height:100%;width:100%;z-index:9;filter:blur(8px);-webkit-filter:blur(8px);background-position:center;background-repeat:no-repeat;background-size:cover}body{background-image:url("./../images/background.png");background-size:300px}li{list-style-type:none}
 
-div > #blur {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  z-index: 9;
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-body {
-  background-image: url("./../images/background.png");
-  background-size: 300px;
-}
-
-li {
-  list-style-type: none;
-}
+/*# sourceMappingURL=main.css.map*/
