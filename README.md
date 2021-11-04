@@ -1,3 +1,5 @@
+Visit page:  https://kcheng16.github.io/cho-plate-project/
+
 Background:
 'Build CHO-Plate!' is a simple interactive game where users are able to interact with to build a healthy meal plate exploring USDA's MyPlate and carbohydrate counting for diabetics. 
 
