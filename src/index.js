@@ -1,7 +1,7 @@
 import food from "./scripts/food";
 import level from "./scripts/level";
 
-document.addEventListener("load",() => {
+document.addEventListener("DOMContentLoaded",() => {
 
 //remove start img==============================================
 let startgame = document.getElementById('startgame');
