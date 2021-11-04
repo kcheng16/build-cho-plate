@@ -19,10 +19,6 @@ var carbCount = 0;
 var kcal = 0;
 var plate = document.getElementById("plate");
 
-// //food-bank-div bg image===========
-// let fbdiv = document.getElementsByClassName("food-bank-div");
-// fbdiv[0].style.backgroundImage = "url('/images/picnic-blanket.png')";
-
 //populating food bank==========================
 let li, img;
 level[currentLevel].food.forEach(itemName => {
@@ -148,7 +144,7 @@ level[currentLevel].food.forEach(itemName => {
       //=======change carb tip
       let carbtipimg = document.getElementById('carbtip');
 
-      carbtipimg.src = `/images/carbtips/carbct-tip-${currentLevel}.png`;
+      carbtipimg.src = `images/carbtips/carbct-tip-${currentLevel}.png`;
       
       //=========remove 2nd plate
       let plate2 = document.getElementById('plate2');
@@ -157,7 +153,7 @@ level[currentLevel].food.forEach(itemName => {
       //=========display new meal-goal
       let mealGoal = document.getElementById('meal-goal');
 
-      mealGoal.src = `/images/meal-goals/meal-goal-${currentLevel}.png`;
+      mealGoal.src = `images/meal-goals/meal-goal-${currentLevel}.png`;
       mealGoal.style.top = 38+'%';
       mealGoal.style.left = 35+'%';
       mealGoal.style.width = 30+'vw';
@@ -181,7 +177,7 @@ level[currentLevel].food.forEach(itemName => {
         foodBank.appendChild(li);
 
       //=========eat food sound
-      let sound = new Audio("/images/sounds/chomp.mp3");
+      let sound = new Audio("images/sounds/chomp.mp3");
       sound.play();
   });
 
