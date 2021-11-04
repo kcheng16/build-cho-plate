@@ -19,6 +19,10 @@ var carbCount = 0;
 var kcal = 0;
 var plate = document.getElementById("plate");
 
+//food-bank-div bg image===========
+let fbdiv = document.getElementsByClassName("food-bank-div");
+fbdiv[0].style.backgroundImage = "url('/images/picnic-blanket.png')";
+
 //populating food bank==========================
 let li, img;
 level[currentLevel].food.forEach(itemName => {
