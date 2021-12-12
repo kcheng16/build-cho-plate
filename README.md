@@ -1,7 +1,7 @@
 Visit page:  https://kcheng16.github.io/cho-plate-project/
 
 Background:
-'Build CHO-Plate!' is a simple interactive game where users are able to interact with to build a healthy meal plate exploring USDA's MyPlate and carbohydrate counting for diabetics. 
+'Build CHO-Plate!' is a simple interactive game where users are able to interact with to build a healthy meal plate exploring carbohydrate counting for diabetics. 
 
 Users will be given a plate, and a bank of selected foods, a carbohydrate counter, and carbohydrate count limit. The user will select from the bank of foods and add it onto the plate. This event which will alter the carbohydrate counter according to the selected foods carbohydrate count. Users will continue to build their plate as they desire trying not to exceed the carbohydrate count limit. Once the user submits their plate with the carbohydrate counter under the count limit, the nutrition facts would be displayed about the plate. Additional levels will reveal a differnt food bank and different carbohydrtae count limit. 
 
