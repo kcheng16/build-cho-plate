@@ -20,8 +20,8 @@ In addition, this project will include:
 -Dictionary of simple food items and their respective carb-count.
 -README.md
 
-Wireframes:
-https://wireframe.cc/Shi415
+### Wireframes:
+![wireframe](https://user-images.githubusercontent.com/88124383/146305765-faa00fab-0bac-4049-b918-cf456a7d5607.jpg)
 
 # Technologies:
 -Javascript: Code and manipulate DOM
