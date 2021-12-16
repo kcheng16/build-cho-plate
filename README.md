@@ -1,11 +1,11 @@
 Visit page:  https://kcheng16.github.io/cho-plate-project/
 
-Background:
+# Background:
 'Build CHO-Plate!' is a simple interactive game where users are able to interact with to build a healthy meal plate exploring carbohydrate counting for diabetics. 
 
 Users will be given a plate, and a bank of selected foods, a carbohydrate counter, and carbohydrate count limit. The user will select from the bank of foods and add it onto the plate. This event which will alter the carbohydrate counter according to the selected foods carbohydrate count. Users will continue to build their plate as they desire trying not to exceed the carbohydrate count limit. Once the user submits their plate with the carbohydrate counter under the count limit, the nutrition facts would be displayed about the plate. Additional levels will reveal a differnt food bank and different carbohydrtae count limit. 
 
-Functionality & MVP:
+# Functionality & MVP:
 
 In 'CHO-Plate', users will be able to:
 -Select food from the food bank to add onto their plate.
@@ -23,14 +23,14 @@ In addition, this project will include:
 Wireframes:
 https://wireframe.cc/Shi415
 
-Technologies:
+# Technologies:
 -Javascript: Code and manipulate DOM
 -HTML: structure the webpage
 -CSS: style the page
 -Webpack: bundle and transpile JavaScript code
 -npm: manage project dependencies
 
-Implementation Timeline:
+# Implementation Timeline:
 Day 1: Set-up project and webpack. Begin adding information to the database. Create Food object containing food keys and their respective values. Build a levels array containing level object with respective values (foods, choMax, etc).
 
 Day 2: Implement underlying game-play logic/event listeners ensuring buttons are working correctly. Make sure data is being rendered correctly:
