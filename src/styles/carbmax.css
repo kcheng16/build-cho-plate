@@ -1,11 +1,7 @@
 .carb-max {
-  /* background-image: url("/images/maxcarb.png");
-  background-size: 30%;
-  background-repeat: no-repeat; */
-
   position: absolute;
-  top: 25%;
-  left: 31%;
+  top: 27%;
+  left: 30%;
   
   font-size: 4vmax;
   text-align: center;

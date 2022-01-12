@@ -152,15 +152,12 @@ level[currentLevel].food.forEach(itemName => {
       if (carbCount <= carbMax){
         goToNextLevel()
       }
-
+      break;
+      
       default:
         clearPlateFunction()
         return alert("Not quite right. Try again!")
     }
-
-
-    // case 5:
-    
   });
   
   function goToNextLevel(){
