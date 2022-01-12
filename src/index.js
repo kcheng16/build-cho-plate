@@ -138,7 +138,7 @@ level[currentLevel].food.forEach(itemName => {
       case 2:
       case 3:
         for (let i = 0; i < foodBank.children.length; i++) {
-          correctAnswer = level[currentLevel].answer.includes(foodBank.children[i].children[0].id)
+          correctAnswer = level[currentLevel].leftover.includes(foodBank.children[i].children[0].id)
         }
         correctAnswer ? goToNextLevel() : (clearPlateFunction(), alert("You're so close! Try again"))
         break;

@@ -13,7 +13,7 @@ const level = {
       'orange, navel'
     ],
     carbMax: 100,
-    answer: [
+    leftover: [
       'egg, hardboiled', 
       'butter', 
     ]
@@ -25,13 +25,13 @@ const level = {
       'baked potato', 
       'spaghetti with meat sauce', 
       'half spaghetti with meat sauce',
-      'greek salad',
+      'greek salad (no dressing)',
       'half-orange, navel',
       'egg, hardboiled',
       'tuna sandwich'
     ],
     carbMax: 100,
-    answer: [
+    leftover: [
       'grilled chicken breast', 
       'egg, hardboiled',
     ]
@@ -49,12 +49,22 @@ const level = {
       
     ],
     carbMax: 100,
-    answer: [
+    leftover: [
       'butter',
       "refried beans",
       "baked potato",
       "half spaghetti with meat sauce",
       'fruit salad (peach and pear and apricot and pineapple and cherry)'
+    ]
+  },
+  4: {
+    food: [
+      
+      
+    ],
+    carbMax: 100,
+    leftover: [
+      
     ]
   },
   // 1: {
@@ -79,7 +89,7 @@ const level = {
   //     'baked potato', 
   //     'spaghetti with meat sauce', 
   //     'half spaghetti with meat sauce',
-  //     'greek salad',
+  //     'greek salad (no dressing)',
   //     'half-orange, navel',
   //     'egg, hardboiled',
   //     'tuna sandwich'
