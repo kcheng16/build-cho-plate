@@ -176,7 +176,7 @@ level[currentLevel].food.forEach(itemName => {
         foodBank.appendChild(li);
 
       //=========eat food sound
-      let sound = new Audio("images/sounds/chomp.mp3");
+      let sound = new Audio("images/sounds/chomp.wav");
       sound.play();
   });
 
