@@ -2,15 +2,14 @@ import food from "./scripts/food";
 import level from "./scripts/level";
 
 document.addEventListener("DOMContentLoaded",() => {
-
 //remove start img==============================================
-let startgame = document.getElementById('startgame');
-let blur = document.getElementById('blur');
+let startButton = document.getElementsByClassName('start-button')
+let modalBg = document.getElementsByClassName("modal-background")
 
-startgame.addEventListener('click', div => {
-  startgame.style = 'display: none';
-  blur.style = 'display: none';
+startButton[0].addEventListener('click', () => {
+  modalBg[0].style = 'display: none';
 });
+
 //========================================================
 const foodBank = document.getElementById("food-bank");
 var currentLevel = 1;
@@ -177,7 +176,7 @@ level[currentLevel].food.forEach(itemName => {
         foodBank.appendChild(li);
 
       //=========eat food sound
-      let sound = new Audio("images/sounds/chomp.mp3");
+      let sound = new Audio("images/sounds/chomp.wav");
       sound.play();
   });
 
@@ -226,6 +225,10 @@ level[currentLevel].food.forEach(itemName => {
     for (let i = nutFact.children.length - 1; i >= 1; i--) {
       nutFact.children[i].remove()
     }
+
+    //=========remove 2nd plate
+    let plate2 = document.getElementById('plate2');
+    plate2.style = 'display: none';
   };
 
   clearPlate.addEventListener("click", clearPlateFunction);

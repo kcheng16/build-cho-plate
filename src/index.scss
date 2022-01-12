@@ -11,38 +11,11 @@
 @import "./styles/socialmedia.css";
 @import "./styles/carbtip.css";
 @import "./styles/meal-goal.css";
-
-
-div > #startgame {
-  position: absolute;
-  top: 2%;
-  left: 25%;
-  width: 50%;
-  height: 95%;
-  z-index: 10;
-  
-  cursor: pointer;
-}
-
-div > #blur{
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  z-index: 9;
-
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
+@import "./styles/modal.scss";
 
 body {
-  background-image: url("./../images/background.png");
+  background-image: url("./../images/background.jpg");
   background-size: 300px;
-
 }
 
 li {
