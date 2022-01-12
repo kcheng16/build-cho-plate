@@ -17,7 +17,7 @@ const food = {
     size: "1 banana (115g)",
     kcal: 113,
     carb: 3,
-    img: './images/gifs/banana.gif'
+    img: './images/banana.png'
   },
 
   "baked potato": {//170112
