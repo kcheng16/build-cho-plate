@@ -18,6 +18,20 @@ const level = {
       'butter', 
     ]
   },
+  2: {
+    food: [
+      'grilled chicken breast', 
+      'white rice', 
+      'baked potato', 
+      'spaghetti with meat sauce', 
+      'half spaghetti with meat sauce',
+      'greek salad',
+      'half-orange, navel',
+      'egg, hardboiled',
+      'tuna sandwich'
+    ],
+    carbMax: 100,
+  },
   // 1: {
   //   food: [
   //     'apple', 
@@ -33,20 +47,20 @@ const level = {
   //   carbMax: 3,
   // },
 
-  2: {
-    food: [
-      'grilled chicken breast', 
-      'white rice', 
-      'baked potato', 
-      'spaghetti with meat sauce', 
-      'half spaghetti with meat sauce',
-      'greek salad',
-      'half-orange, navel',
-      'egg, hardboiled',
-      'tuna sandwich'
-    ],
-    carbMax: 5,
-  },
+  // 2: {
+  //   food: [
+  //     'grilled chicken breast', 
+  //     'white rice', 
+  //     'baked potato', 
+  //     'spaghetti with meat sauce', 
+  //     'half spaghetti with meat sauce',
+  //     'greek salad',
+  //     'half-orange, navel',
+  //     'egg, hardboiled',
+  //     'tuna sandwich'
+  //   ],
+  //   carbMax: 5,
+  // },
 
   3: {
     food: [

@@ -68,14 +68,17 @@ level[currentLevel].food.forEach(itemName => {
   plateUl.addEventListener('drop', e => {
     let draggingEle2 = document.querySelector('.dragging');
     plateUl.appendChild(draggingEle2);
-    // console.log("foodbank", foodBank)
-    // console.log("foodBank.children[0].innerHTML", foodBank.children[0].children[0].id)
     
-    if (plateUl.children.length > 4){
-      alert("There's too much food! Do you need a second plate?");
+    if (plateUl.children.length === 5){
+      alert("That's a lot of food! Do you need a second plate?");
 
       let plate2 = document.getElementById('plate2');
       plate2.style = 'display: true';
+    }
+
+    if (plateUl.children.length === 9){
+      clearPlateFunction()
+      alert("Hmm...that answer doesn't seem correct. Let's try again!")
     }
     
     let foodId = draggingEle2.firstChild.id;
@@ -132,23 +135,20 @@ level[currentLevel].food.forEach(itemName => {
 
     switch (currentLevel){
       case 1:
-        // foodBank.children[0].children[0].id
-        console.log("foodBank.children", foodBank.children)
         for (let i = 0; i < foodBank.children.length; i++) {
           answer = level[currentLevel].answer.includes(foodBank.children[i].children[0].id)
         }
-        console.log("answer:", answer)
         if (answer) {
           return goToNextLevel()
         } else {
           clearPlateFunction()
-          alert("Try again!")
+          alert("You're so close! Try again")
         }
         break;
 
       default:
         clearPlateFunction()
-        return alert("Try again!")
+        return alert("You're so close! Try again!")
     }
 
 
