@@ -129,7 +129,6 @@ level[currentLevel].food.forEach(itemName => {
 
   //Eat food================================================
   const eatButton = document.getElementById("eat-food");
-  const plateUl = document.getElementById('plate-ul');
 
   eatButton.addEventListener("click", function(){ 
     let correctAnswer = false
@@ -138,8 +137,9 @@ level[currentLevel].food.forEach(itemName => {
       case 1:
       case 2:
       case 3:
-        for (let i = 0; i < foodBank.children.length; i++) {
-          correctAnswer = level[currentLevel].leftover.includes(foodBank.children[i].children[0].id)
+      case 4:
+        for (let i = 0; i < plateUl.children.length; i++) {
+          correctAnswer = level[currentLevel].answer.includes(plateUl.children[i].children[0].id)
         }
         correctAnswer ? goToNextLevel() : (clearPlateFunction(), alert("You're so close! Try again"))
         break;

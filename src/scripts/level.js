@@ -12,10 +12,15 @@ const level = {
       'banana', 
       'orange, navel'
     ],
-    carbMax: 100,
-    leftover: [
-      'egg, hardboiled', 
-      'butter', 
+    carbMax: 999,
+    answer: [
+      'apple', 
+      'cereal and milk', 
+      'blueberry muffin', 
+      'wheat bagel', 
+      'white bread', 
+      'banana', 
+      'orange, navel'
     ]
   },
   2: {
@@ -30,10 +35,15 @@ const level = {
       'egg, hardboiled',
       'tuna sandwich'
     ],
-    carbMax: 100,
-    leftover: [
-      'grilled chicken breast', 
-      'egg, hardboiled',
+    carbMax: 999,
+    answer: [
+      'white rice', 
+      'baked potato', 
+      'spaghetti with meat sauce', 
+      'half spaghetti with meat sauce',
+      'greek salad (no dressing)',
+      'half-orange, navel',
+      'tuna sandwich'
     ]
   },
   3: {
@@ -46,25 +56,35 @@ const level = {
       'broccoli, cooked with oil',
       'half-orange, navel',
       'fruit salad (peach and pear and apricot and pineapple and cherry)',
-      
     ],
-    carbMax: 100,
-    leftover: [
-      'butter',
-      "refried beans",
-      "baked potato",
-      "half spaghetti with meat sauce",
-      'fruit salad (peach and pear and apricot and pineapple and cherry)'
+    carbMax: 999,
+    answer: [
+      'apple', 
+      'white bread', 
+      'orange, navel',
+      'fruit salad (peach and pear and apricot and pineapple and cherry)',
     ]
   },
   4: {
     food: [
-      
-      
+      'banana',
+      "wheat bagel",
+      "baked potato",
+      'cereal and milk',
+      "refried beans",
+      'roast beef',
+      'white rice',
+      'tuna sandwich',
+      "half spaghetti with meat sauce"
     ],
-    carbMax: 100,
-    leftover: [
-      
+    carbMax: 999,
+    answer: [
+      'banana',
+      "baked potato",
+      'cereal and milk',
+      "refried beans",
+      'white rice',
+      'tuna sandwich',
     ]
   },
   // 1: {
