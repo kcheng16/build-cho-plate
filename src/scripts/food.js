@@ -46,7 +46,7 @@ const food = {
     size: "1cup",
     kcal: 98,
     carb: 1,
-    img: './images/gifs/broccoli.gif'
+    img: './images/broccoli.png'
   },
   
 
@@ -68,7 +68,7 @@ const food = {
     size: "1cup",
     kcal: 44,
     carb: 4,
-    img: './images/gifs/greeksalad.gif'
+    img: './images/greeksalad.png'
   },
 
   'fruit salad (peach and pear and apricot and pineapple and cherry)' :{
