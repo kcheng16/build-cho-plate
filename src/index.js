@@ -129,6 +129,7 @@ level[currentLevel].food.forEach(itemName => {
 
   //Eat food================================================
   const eatButton = document.getElementById("eat-food");
+  const plateUl = document.getElementById('plate-ul');
 
   eatButton.addEventListener("click", function(){ 
     let correctAnswer = false

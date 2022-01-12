@@ -24,7 +24,7 @@ const food = {
     kcal: 124,
     carb: 2,
     size: "1 potato (156g)",
-    img: './images/bakedpotato.gif'
+    img: './images/bakedpotato.png'
   },
 
   
