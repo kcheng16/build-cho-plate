@@ -2,7 +2,7 @@ import food from "./scripts/food";
 import level from "./scripts/level";
 
 document.addEventListener("DOMContentLoaded",() => {
-//remove start img==============================================
+//remove start modal==============================================
 let startButton = document.getElementsByClassName('start-button')
 let modalBg = document.getElementsByClassName("modal-background")
 
@@ -126,6 +126,11 @@ level[currentLevel].food.forEach(itemName => {
   const eatButton = document.getElementById("eat-food");
 
   eatButton.addEventListener("click", function(){ 
+    // if (currentLevel < 3 && ul.child includes level.plateLength) {
+    //  do everything, then...
+    //  go to the next level
+    // }
+
     if (carbCount <= carbMax){
       currentLevel += 1;
       carbMax = level[currentLevel].carbMax;
@@ -182,7 +187,7 @@ level[currentLevel].food.forEach(itemName => {
 
       //add draggable===========================
 
-        foodBank.addEventListener('dragover', e => {
+      foodBank.addEventListener('dragover', e => {
         e.preventDefault();
         let draggingEle = document.querySelector('.dragging');
         foodBank.appendChild(draggingEle);
