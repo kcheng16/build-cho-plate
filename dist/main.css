@@ -101,8 +101,9 @@
 #plate-ul {
   position: absolute;
   left: 33%;
-  width: 25vw;
-  height: 20vh;
+  top: 35%;
+  width: 28%;
+  height: 50%;
   transform: rotate(180deg);
 }
 
