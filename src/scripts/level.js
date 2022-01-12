@@ -36,6 +36,27 @@ const level = {
       'egg, hardboiled',
     ]
   },
+  3: {
+    food: [
+      'apple', 
+      "refried beans", 
+      "baked potato", 
+      'white bread', 
+      "half spaghetti with meat sauce",
+      'broccoli, cooked with oil',
+      'half-orange, navel',
+      'fruit salad (peach and pear and apricot and pineapple and cherry)',
+      
+    ],
+    carbMax: 100,
+    answer: [
+      'butter',
+      "refried beans",
+      "baked potato",
+      "half spaghetti with meat sauce",
+      'fruit salad (peach and pear and apricot and pineapple and cherry)'
+    ]
+  },
   // 1: {
   //   food: [
   //     'apple', 
@@ -66,20 +87,20 @@ const level = {
   //   carbMax: 5,
   // },
 
-  3: {
-    food: [
-      'white rice', 
-      "refried beans", 
-      "baked potato", 
-      'white bread', 
-      "half spaghetti with meat sauce",
-      'broccoli, cooked with oil',
-      'roast beef',
-      'fruit salad (peach and pear and apricot and pineapple and cherry)',
-      'butter'
-    ],
-    carbMax: 5,
-  },
+  // 3: {
+  //   food: [
+  //     'white rice', 
+  //     "refried beans", 
+  //     "baked potato", 
+  //     'white bread', 
+  //     "half spaghetti with meat sauce",
+  //     'broccoli, cooked with oil',
+  //     'roast beef',
+  //     'fruit salad (peach and pear and apricot and pineapple and cherry)',
+  //     'butter'
+  //   ],
+  //   carbMax: 5,
+  // },
 }
 
 export default level;
