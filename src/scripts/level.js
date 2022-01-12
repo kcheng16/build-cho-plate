@@ -1,20 +1,5 @@
 const level = {
 
-  // 1: {
-  //   food: [
-  //     'apple', 
-  //     'cereal and milk', 
-  //     'egg, hardboiled', 
-  //     'blueberry muffin', 
-  //     'wheat bagel', 
-  //     'white bread', 
-  //     'butter', 
-  //     'banana', 
-  //     'orange, navel'
-  //   ],
-  //   carbMax: 100,
-  //   plateLength: 7
-  // },
   1: {
     food: [
       'apple', 
@@ -27,8 +12,26 @@ const level = {
       'banana', 
       'orange, navel'
     ],
-    carbMax: 3,
+    carbMax: 100,
+    answer: [
+      'egg, hardboiled', 
+      'butter', 
+    ]
   },
+  // 1: {
+  //   food: [
+  //     'apple', 
+  //     'cereal and milk', 
+  //     'egg, hardboiled', 
+  //     'blueberry muffin', 
+  //     'wheat bagel', 
+  //     'white bread', 
+  //     'butter', 
+  //     'banana', 
+  //     'orange, navel'
+  //   ],
+  //   carbMax: 3,
+  // },
 
   2: {
     food: [

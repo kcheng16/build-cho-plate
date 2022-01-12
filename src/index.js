@@ -68,7 +68,9 @@ level[currentLevel].food.forEach(itemName => {
   plateUl.addEventListener('drop', e => {
     let draggingEle2 = document.querySelector('.dragging');
     plateUl.appendChild(draggingEle2);
-
+    // console.log("foodbank", foodBank)
+    // console.log("foodBank.children[0].innerHTML", foodBank.children[0].children[0].id)
+    
     if (plateUl.children.length > 4){
       alert("There's too much food! Do you need a second plate?");
 
@@ -126,87 +128,111 @@ level[currentLevel].food.forEach(itemName => {
   const eatButton = document.getElementById("eat-food");
 
   eatButton.addEventListener("click", function(){ 
-    // if (currentLevel < 3 && ul.child includes level.plateLength) {
-    //  do everything, then...
-    //  go to the next level
-    // }
+    let answer = false
 
-    if (carbCount <= carbMax){
-      currentLevel += 1;
-      carbMax = level[currentLevel].carbMax;
-
-      //============= empty the plate
-      clearPlateFunction();
-
-      //==============clear food bank
-      for (let i = foodBank.children.length - 1; i >= 0; i--) {
-        foodBank.children[i].remove();
-      }
-      //===========set next level 'Carb Max'
-      carbMaxDiv[0].innerText = carbMax;
-
-      //=======change carb tip
-      let carbtipimg = document.getElementById('carbtip');
-
-      carbtipimg.src = `images/carbtips/carbct-tip-${currentLevel}.png`;
-      
-      //=========remove 2nd plate
-      let plate2 = document.getElementById('plate2');
-      plate2.style = 'display: none';
-
-      //=========display new meal-goal
-      let mealGoal = document.getElementById('meal-goal');
-
-      mealGoal.src = `images/meal-goals/meal-goal-${currentLevel}.png`;
-      mealGoal.style.top = 38+'%';
-      mealGoal.style.left = 35+'%';
-      mealGoal.style.width = 30+'vw';
-      mealGoal.style.height = 30+'vh';
-      
-      //==============render food bank
-      level[currentLevel].food.forEach(itemName => {
-        li = document.createElement("li");
-        li.setAttribute('draggable', true);
-        li.setAttribute('class', 'draggable');
-        
-        img = document.createElement('img');
-        
-        if (Object.keys(food).includes(itemName)){
-          img.id = `${itemName}`;
-          img.src = food[itemName].img;
-          img.title = `${itemName}`;
-
-          li.appendChild(img);
+    switch (currentLevel){
+      case 1:
+        // foodBank.children[0].children[0].id
+        console.log("foodBank.children", foodBank.children)
+        for (let i = 0; i < foodBank.children.length; i++) {
+          answer = level[currentLevel].answer.includes(foodBank.children[i].children[0].id)
         }
-        foodBank.appendChild(li);
+        console.log("answer:", answer)
+        if (answer) {
+          return goToNextLevel()
+        } else {
+          clearPlateFunction()
+          alert("Try again!")
+        }
+        break;
+
+      default:
+        clearPlateFunction()
+        return alert("Try again!")
+    }
+
+
+    // if (carbCount <= carbMax){
+    //   goToNextLevel()
+    // }
+  });
+  
+  function goToNextLevel(){
+    currentLevel += 1;
+    carbMax = level[currentLevel].carbMax;
+
+    //============= empty the plate
+    clearPlateFunction();
+
+    //==============clear food bank
+    for (let i = foodBank.children.length - 1; i >= 0; i--) {
+      foodBank.children[i].remove();
+    }
+    //===========set next level 'Carb Max'
+    carbMaxDiv[0].innerText = carbMax;
+
+    //=======change carb tip
+    let carbtipimg = document.getElementById('carbtip');
+
+    carbtipimg.src = `images/carbtips/carbct-tip-${currentLevel}.png`;
+    
+    //=========remove 2nd plate
+    let plate2 = document.getElementById('plate2');
+    plate2.style = 'display: none';
+
+    //=========display new meal-goal
+    let mealGoal = document.getElementById('meal-goal');
+
+    mealGoal.src = `images/meal-goals/meal-goal-${currentLevel}.png`;
+    mealGoal.style.top = 38+'%';
+    mealGoal.style.left = 35+'%';
+    mealGoal.style.width = 30+'vw';
+    mealGoal.style.height = 30+'vh';
+    
+    //==============render food bank
+    level[currentLevel].food.forEach(itemName => {
+      li = document.createElement("li");
+      li.setAttribute('draggable', true);
+      li.setAttribute('class', 'draggable');
+      
+      img = document.createElement('img');
+      
+      if (Object.keys(food).includes(itemName)){
+        img.id = `${itemName}`;
+        img.src = food[itemName].img;
+        img.title = `${itemName}`;
+
+        li.appendChild(img);
+      }
+      foodBank.appendChild(li);
 
       //=========eat food sound
       let sound = new Audio("images/sounds/chomp.wav");
       sound.play();
-  });
+    });
 
-      //add draggable===========================
+    //add draggable===========================
 
-      foodBank.addEventListener('dragover', e => {
-        e.preventDefault();
-        let draggingEle = document.querySelector('.dragging');
-        foodBank.appendChild(draggingEle);
+    foodBank.addEventListener('dragover', e => {
+      e.preventDefault();
+      let draggingEle = document.querySelector('.dragging');
+      foodBank.appendChild(draggingEle);
+    });
+
+    const draggables = document.querySelectorAll('.draggable');
+
+    draggables.forEach(draggable => {
+      draggable.addEventListener('dragstart', () => {
+        draggable.classList.add('dragging');
       });
-
-      const draggables = document.querySelectorAll('.draggable');
-
-      draggables.forEach(draggable => {
-        draggable.addEventListener('dragstart', () => {
-          draggable.classList.add('dragging');
-        });
-    
-        draggable.addEventListener('dragend', () => {
-          draggable.classList.remove('dragging');
-        });
-      });
-    }
-  });
   
+      draggable.addEventListener('dragend', () => {
+        draggable.classList.remove('dragging');
+      });
+    });
+  }
+
+
   //Clear plate/empty <img>: <li>=========================
   const clearPlate = document.getElementById("clear-plate");
 
