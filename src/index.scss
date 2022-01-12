@@ -37,7 +37,7 @@
     height: 100%;
   }
 
-  >.start{
+  >.start-button{
     position: absolute;
     bottom: 10%;
     right: 50%;
@@ -52,7 +52,7 @@
     cursor: pointer;
   }
 
-  >.start:hover{
+  >.start-button:hover{
     background-color: lime;
   }
 }

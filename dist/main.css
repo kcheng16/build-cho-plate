@@ -311,7 +311,7 @@
   width: 100%;
   height: 100%;
 }
-.modal-child > .start {
+.modal-child > .start-button {
   position: absolute;
   bottom: 10%;
   right: 50%;
@@ -325,12 +325,12 @@
   border-radius: 50px;
   cursor: pointer;
 }
-.modal-child > .start:hover {
+.modal-child > .start-button:hover {
   background-color: lime;
 }
 
 body {
-  background-image: url("./../images/background.png");
+  background-image: url("./../images/background.jpg");
   background-size: 300px;
 }
 
