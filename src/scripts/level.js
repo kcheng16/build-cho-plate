@@ -31,6 +31,10 @@ const level = {
       'tuna sandwich'
     ],
     carbMax: 100,
+    answer: [
+      'grilled chicken breast', 
+      'egg, hardboiled',
+    ]
   },
   // 1: {
   //   food: [

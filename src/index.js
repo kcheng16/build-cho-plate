@@ -131,19 +131,14 @@ level[currentLevel].food.forEach(itemName => {
   const eatButton = document.getElementById("eat-food");
 
   eatButton.addEventListener("click", function(){ 
-    let answer = false
+    let correctAnswer = false
 
     switch (currentLevel){
       case 1:
         for (let i = 0; i < foodBank.children.length; i++) {
-          answer = level[currentLevel].answer.includes(foodBank.children[i].children[0].id)
+          correctAnswer = level[currentLevel].answer.includes(foodBank.children[i].children[0].id)
         }
-        if (answer) {
-          return goToNextLevel()
-        } else {
-          clearPlateFunction()
-          alert("You're so close! Try again")
-        }
+        correctAnswer ? goToNextLevel() : (clearPlateFunction(), alert("You're so close! Try again"))
         break;
 
       default:
@@ -152,6 +147,7 @@ level[currentLevel].food.forEach(itemName => {
     }
 
 
+    // case 5:
     // if (carbCount <= carbMax){
     //   goToNextLevel()
     // }
