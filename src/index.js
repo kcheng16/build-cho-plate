@@ -2,15 +2,13 @@ import food from "./scripts/food";
 import level from "./scripts/level";
 
 document.addEventListener("DOMContentLoaded",() => {
-
 //remove start img==============================================
-let startgame = document.getElementById('startgame');
-let blur = document.getElementById('blur');
+let startButton = document.getElementsByClassName('start')
 
-startgame.addEventListener('click', div => {
-  startgame.style = 'display: none';
-  blur.style = 'display: none';
+startButton[0].addEventListener('click', () => {
+  startButton[0].style = 'display: none';
 });
+
 //========================================================
 const foodBank = document.getElementById("food-bank");
 var currentLevel = 1;
