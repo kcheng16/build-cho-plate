@@ -155,6 +155,13 @@ const food = {
     img: './images/tuna-sandwich.png'
   },
 
+  'tortilla': {
+    size: "1 serving (8inch)",
+    kcal: 146,
+    carb: 2,
+    img: './images/tortilla.png'
+  },
+
   'white bread': { //18967
     size: "1slice",
     kcal: 66,

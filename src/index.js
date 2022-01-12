@@ -138,14 +138,20 @@ level[currentLevel].food.forEach(itemName => {
       case 2:
       case 3:
       case 4:
+      case 5:
+      case 6:
         for (let i = 0; i < plateUl.children.length; i++) {
           correctAnswer = level[currentLevel].answer.includes(plateUl.children[i].children[0].id)
         }
         correctAnswer ? goToNextLevel() : (clearPlateFunction(), alert("You're so close! Try again"))
         break;
 
-      
-
+      case 7:
+      case 8:
+      case 9:
+      if (carbCount <= carbMax){
+        goToNextLevel()
+      }
 
       default:
         clearPlateFunction()
@@ -154,9 +160,7 @@ level[currentLevel].food.forEach(itemName => {
 
 
     // case 5:
-    // if (carbCount <= carbMax){
-    //   goToNextLevel()
-    // }
+    
   });
   
   function goToNextLevel(){
