@@ -225,6 +225,10 @@ level[currentLevel].food.forEach(itemName => {
     for (let i = nutFact.children.length - 1; i >= 1; i--) {
       nutFact.children[i].remove()
     }
+
+    //=========remove 2nd plate
+    let plate2 = document.getElementById('plate2');
+    plate2.style = 'display: none';
   };
 
   clearPlate.addEventListener("click", clearPlateFunction);
