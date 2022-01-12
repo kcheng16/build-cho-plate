@@ -4,9 +4,9 @@ import level from "./scripts/level";
 document.addEventListener("DOMContentLoaded",() => {
 //remove start img==============================================
 let startButton = document.getElementsByClassName('start')
-
+let modalBg = document.getElementsByClassName("modal-background")
 startButton[0].addEventListener('click', () => {
-  startButton[0].style = 'display: none';
+  modalBg[0].style = 'display: none';
 });
 
 //========================================================
