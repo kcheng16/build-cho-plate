@@ -135,6 +135,7 @@ level[currentLevel].food.forEach(itemName => {
 
     switch (currentLevel){
       case 1:
+      case 2:
         for (let i = 0; i < foodBank.children.length; i++) {
           correctAnswer = level[currentLevel].answer.includes(foodBank.children[i].children[0].id)
         }
