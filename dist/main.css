@@ -326,6 +326,18 @@
   background-color: lime;
 }
 
+#play-button {
+  width: 2vw;
+  position: absolute;
+  bottom: 3vw;
+  right: 49.5vw;
+}
+
+#play-button:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.2);
+}
+
 body {
   background-image: url("./../images/background.jpg");
   background-size: 300px;
