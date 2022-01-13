@@ -30,8 +30,6 @@
   padding: 20px;
   border: 0;
   background-color: transparent;
-
-
 }
 
 #food-bank > li > img {
@@ -40,4 +38,9 @@
 
   border: 0;
   background-color: transparent;
+}
+
+#food-bank > li > img:hover{
+  transition: all .2s ease-in-out;
+  transform: scale(1.5);
 }

@@ -16,15 +16,15 @@ const food = {
   'banana':  {//9040
     size: "1 banana (115g)",
     kcal: 113,
-    carb: 3,
+    carb: 2,
     img: './images/banana.png'
   },
 
   "baked potato": {//170112
     kcal: 124,
-    carb: 3,
+    carb: 2,
     size: "1 potato (156g)",
-    img: './images/bakedpotato.gif'
+    img: './images/bakedpotato.png'
   },
 
   
@@ -35,9 +35,9 @@ const food = {
     img: "./images/butterslice.png"
   },
   
-  "blueberry muffin": {//
+  "blueberry muffin": {//18940
     kcal: 424,
-    carb: 6,
+    carb: 3,
     size: "1 medium (113g)",
     img: './images/blueberrymuffin.png'
   },
@@ -45,7 +45,7 @@ const food = {
   'broccoli, cooked with oil': {
     size: "1cup",
     kcal: 98,
-    carb: 1,
+    carb: 0,
     img: './images/broccoli.png'
   },
   
@@ -53,7 +53,7 @@ const food = {
   'cereal and milk': { //8013 + 1079
     size: "1cup + 1/2cup",
     kcal: 226, //104 + 122
-    carb: 3, //20 + 12
+    carb: 2, //20 + 12
     img: './images/cereal-and-milk.png'
   },
 
@@ -64,17 +64,17 @@ const food = {
     img: './images/hardboilegg.png'
   },
 
-  'greek salad': {
+  'greek salad (no dressing)': {
     size: "1cup",
     kcal: 44,
-    carb: 4,
+    carb: 0,
     img: './images/greeksalad.png'
   },
 
-  'fruit salad (peach and pear and apricot and pineapple and cherry)' :{
+  'fruit salad (peach and pear and apricot and pineapple and cherry)' :{ //9103
     size: "1/2c",
     kcal: 65,
-    carb: 2,
+    carb: 1,
     img: './images/fruit-salad.png'
   },
 
@@ -85,23 +85,30 @@ const food = {
     img: './images/chicken-breast.png'
   },
 
+  'grilled mushroom': {
+    size: "1/4c",
+    kcal: 8,
+    carb: 0,
+    img: './images/grilled-mushroom.png'
+  },
+
   "refried beans": {//16103
     kcal: 214,
-    carb: 3,
+    carb: 2,
     size: "1cup",
     img: './images/refriedbeans.png'
   },
 
   "spaghetti with meat sauce": {//36630
     kcal: 670,
-    carb: 7,
+    carb: 6,
     size: "554g",
     img: './images/spaghettiwithmeatsauce.png'
   },
 
   "half spaghetti with meat sauce": {//36630
     kcal: 335,
-    carb: 4,
+    carb: 3,
     size: "277g",
     img: './images/halfspaghetti.png'
   },
@@ -109,15 +116,29 @@ const food = {
   'orange, navel': { //9202
     size: "1each (140g)",
     kcal: 73,
-    carb: 2,
+    carb: 1,
     img: './images/navel-orange.png'
   },
 
   'half-orange, navel': { //9202
     size: "1/2each (70g)",
     kcal: 37,
-    carb: 1,
+    carb: 0.5,
     img: './images/half-orange.png'
+  },
+
+  'popcorn, air-popped': { //19034
+    size: "2 cups",
+    kcal: 62,
+    carb: 1,
+    img: './images/popcorn.png'
+  },
+
+  'large peach': { //9236
+    size: "1 large (175g)",
+    kcal: 136,
+    carb: 1,
+    img: './images/peach.png'
   },
 
   'roast beef':  {
@@ -130,15 +151,22 @@ const food = {
   'white rice': { //20451
     size: "1/2cup",
     kcal: 121,
-    carb: 3,
+    carb: 2,
     img: './images/whiterice.png'
   },
 
   'tuna sandwich': {
     size: "1 regular sandwich (180g)",
     kcal: 396,
-    carb: 3,
+    carb: 2,
     img: './images/tuna-sandwich.png'
+  },
+
+  'tortilla': {
+    size: "1 serving (8inch)",
+    kcal: 146,
+    carb: 2,
+    img: './images/tortilla.png'
   },
 
   'white bread': { //18967
@@ -148,9 +176,9 @@ const food = {
     img: './images/whitebread.png'
   },
 
-  "wheat bagel": {//18274
+  "wheat bagel": {//18968
     kcal: 245,
-    carb: 5,
+    carb: 3,
     size: "1 bagel (98g)",
     img: './images/wheatbagel.png'
   },

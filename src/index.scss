@@ -12,14 +12,17 @@
 @import "./styles/carbtip.css";
 @import "./styles/meal-goal.css";
 @import "./styles/modal.scss";
+@import "./styles/music.scss";
 
 body {
   background-image: url("./../images/background.jpg");
   background-size: 300px;
+  font-family: sans-serif;
 }
 
 li {
   list-style-type: none;
 }
+
 
 
