@@ -6,7 +6,8 @@ export function setBackgroundMusic(){
   playButton.addEventListener("click", () => {
     if (music.paused) {
       music.volume = 0.5
-      music.play()
+      music.loop = true
+      music.play().loop()
     } else {
       music.pause()
     }
