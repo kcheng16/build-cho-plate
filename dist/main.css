@@ -51,12 +51,14 @@
 
 #food-bank {
   display: grid;
-
   grid-template-columns: repeat(3, 1fr);
-  width: 18vw;
-  height: 37vh;
-
-  border: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  align-items: center;
+  justify-items: center;
   background-color: transparent;
 }
 
@@ -154,8 +156,8 @@
 .kcal {
   position: absolute;
   top: 27%;
-  left: 63.5%;
-  font-size: 2.5vw;
+  left: 63.8%;
+  font-size: 2.2vw;
 }
 
 #calorieimg {
@@ -249,7 +251,7 @@
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/socialmedia.css ***!
   \**********************************************************************************************************/
 .social {
-  position: fixed;
+  position: absolute;
   top: 5%;
   right: 5%;
 }
