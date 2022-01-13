@@ -140,7 +140,7 @@ level[currentLevel].food.forEach(itemName => {
       case 5:
       case 6:
         for (let i = 0; i < plateUl.children.length; i++) {
-          correctAnswer = level[currentLevel].answer.includes(plateUl.children[i].children[0].id)
+          correctAnswer = level[currentLevel].answer.includes(plateUl.children[i].children[0].id) && level[currentLevel].answer.length === plateUl.children.length
         }
         correctAnswer ? goToNextLevel() : (clearPlateFunction(), alert("You're so close! Try again"))
         break;
