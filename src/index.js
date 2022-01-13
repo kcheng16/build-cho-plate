@@ -4,33 +4,33 @@ import {setBackgroundMusic} from "./scripts/background_music";
 import {setModal} from "./scripts/modal";
 
 document.addEventListener("DOMContentLoaded",() => {
-setBackgroundMusic()
-setModal()
+  setBackgroundMusic()
+  setModal()
 
-//========================================================
-const foodBank = document.getElementById("food-bank");
-var currentLevel = 1;
-var carbMax = level[currentLevel].carbMax;
-var carbCount = 0;
-var kcal = 0;
+  //========================================================
+  const foodBank = document.getElementById("food-bank");
+  var currentLevel = 1;
+  var carbMax = level[currentLevel].carbMax;
+  var carbCount = 0;
+  var kcal = 0;
 
-//populating food bank==========================
-let li, img;
-level[currentLevel].food.forEach(itemName => {
-  li = document.createElement("li");
-  li.setAttribute('draggable', true);
-  li.setAttribute('class', 'draggable');
-  
-  img = document.createElement('img');
-  
-  if (Object.keys(food).includes(itemName)){
-    img.id = `${itemName}`;
-    img.src = food[itemName].img;
-    img.title = `${itemName}`;
-    li.appendChild(img);
-  }
-  foodBank.appendChild(li);
+  //populating food bank==========================
+  let li, img;
 
+  level[currentLevel].food.forEach(itemName => {
+    li = document.createElement("li");
+    li.setAttribute('draggable', true);
+    li.setAttribute('class', 'draggable');
+    
+    img = document.createElement('img');
+    
+    if (Object.keys(food).includes(itemName)){
+      img.id = `${itemName}`;
+      img.src = food[itemName].img;
+      img.title = `${itemName}`;
+      li.appendChild(img);
+    }
+    foodBank.appendChild(li);
   });
 
   //drag foods============================================
@@ -206,9 +206,15 @@ level[currentLevel].food.forEach(itemName => {
       }
       foodBank.appendChild(li);
 
-      //=========eat food sound
+      //=========eat food sound (check if audio is on)
+      const music = document.getElementById("music")
       let sound = new Audio("images/sounds/chomp.wav");
-      sound.play();
+      
+      if (!music.paused){
+        sound.volume = 0.3
+        sound.play();
+      }
+      
     });
 
     //add draggable===========================
