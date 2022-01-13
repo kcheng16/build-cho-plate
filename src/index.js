@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded",() => {
   });
 
   //appending food-element to plate================
-  plateUl.addEventListener('drop', e => {
+  plateUl.addEventListener('drop', () => {
     let draggingEle2 = document.querySelector('.dragging');
     plateUl.appendChild(draggingEle2);
     
@@ -78,7 +78,13 @@ document.addEventListener("DOMContentLoaded",() => {
     }
     
     let foodId = draggingEle2.firstChild.id;
-
+    
+    //=====================pop sound
+    const pop = new Audio("images/sounds/pop.wav")
+    if (!music.paused){
+      pop.volume = 0.5
+      pop.play();
+    }
     //=====adding carb to counter
     let carbCtDiv = document.getElementsByClassName('carb-count');
     carbCount += food[foodId].carb;
@@ -214,7 +220,6 @@ document.addEventListener("DOMContentLoaded",() => {
         sound.volume = 0.3
         sound.play();
       }
-      
     });
 
     //add draggable===========================

@@ -40,7 +40,7 @@
 
   border: dashed black 3px;
 
-  background-image: url("/images/picnic-blanket.png");
+  background-image: url("./../../images/picnic-blanket.png");
   background-size: 100%;
   border-radius: 25px;
 }
