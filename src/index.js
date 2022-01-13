@@ -1,14 +1,11 @@
 import food from "./scripts/food";
 import level from "./scripts/level";
+import {setBackgroundMusic} from "./scripts/background_music";
+import {setModal} from "./scripts/modal";
 
 document.addEventListener("DOMContentLoaded",() => {
-//remove start modal==============================================
-let startButton = document.getElementsByClassName('start-button')
-let modalBg = document.getElementsByClassName("modal-background")
-
-startButton[0].addEventListener('click', () => {
-  modalBg[0].style = 'display: none';
-});
+setBackgroundMusic()
+setModal()
 
 //========================================================
 const foodBank = document.getElementById("food-bank");
