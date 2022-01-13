@@ -65,8 +65,6 @@
   padding: 20px;
   border: 0;
   background-color: transparent;
-
-
 }
 
 #food-bank > li > img {
@@ -77,6 +75,10 @@
   background-color: transparent;
 }
 
+#food-bank > li > img:hover{
+  transition: all .2s ease-in-out;
+  transform: scale(1.5);
+}
 /*!****************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/plate.css ***!
   \****************************************************************************************************/
@@ -175,6 +177,10 @@
   left: 42%;
 }
 
+#clear-plate:hover{
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+}
+
 
 /*!****************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/title.css ***!
@@ -202,6 +208,9 @@
   cursor: pointer;
 }
 
+#eat-food:hover{
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+}
 /*!****************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/table.css ***!
   \****************************************************************************************************/
@@ -320,6 +329,7 @@
 body {
   background-image: url("./../images/background.jpg");
   background-size: 300px;
+  font-family: sans-serif;
 }
 
 li {
