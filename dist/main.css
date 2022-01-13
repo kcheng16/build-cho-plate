@@ -21,9 +21,6 @@
   \***************************************************************************************************/
 
 .draggable {
-  padding: 10px;
-  background-color: white;
-  border: 1px solid black;
   cursor: move;
 }
 
@@ -51,13 +48,11 @@
 
 #food-bank {
   display: grid;
-
   grid-template-columns: repeat(3, 1fr);
-  width: 18vw;
-  height: 37vh;
-
-  border: 0;
-  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 
@@ -65,6 +60,7 @@
   padding: 20px;
   border: 0;
   background-color: transparent;
+  text-align: center;
 }
 
 #food-bank > li > img {
@@ -153,7 +149,7 @@
   \***************************************************************************************************/
 .kcal {
   position: absolute;
-  top: 27%;
+  top: 28%;
   left: 63.8%;
   font-size: 2.2vw;
 }
@@ -325,6 +321,7 @@
   font-weight: 600;
   color: white;
   background: radial-gradient(circle, #8c8c8c 0%, #424242 100%);
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
   text-shadow: 3px 4px 5px #212121;
 }
 .controls #play-button {
@@ -340,6 +337,9 @@
   font-weight: 600;
   background: radial-gradient(circle, #2cc429 0%, #236213 100%);
   box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+}
+.controls .buttons {
+  cursor: pointer;
 }
 .controls .buttons:hover {
   transition: all 0.2s ease-in-out;
