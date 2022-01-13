@@ -165,23 +165,6 @@
   width: 17vw;
   height: 15vh;
 }
-/*!**********************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/clearbutton.css ***!
-  \**********************************************************************************************************/
-#clear-plate {
-  cursor: pointer;
-  width: 5vw;
-  height: auto;
-
-  position: absolute ;
-  left: 42%;
-}
-
-#clear-plate:hover{
-  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
-}
-
-
 /*!****************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/title.css ***!
   \****************************************************************************************************/
@@ -326,14 +309,39 @@
   background-color: lime;
 }
 
-#play-button {
-  width: 2vw;
+.controls {
+  display: flex;
+  justify-content: space-around;
   position: absolute;
-  bottom: 3vw;
-  right: 49.5vw;
+  width: 17vw;
+  bottom: 3%;
+  left: 40%;
+  align-items: center;
 }
-
-#play-button:hover {
+.controls .clear-plate {
+  padding: 1vw;
+  border-radius: 8px;
+  font-size: 1vw;
+  font-weight: 600;
+  color: white;
+  background: radial-gradient(circle, #8c8c8c 0%, #424242 100%);
+  text-shadow: 3px 4px 5px #212121;
+}
+.controls #play-button {
+  width: 2vw;
+}
+.controls .eat-food {
+  padding: 1vw;
+  width: 3vw;
+  text-align: center;
+  border-radius: 8px;
+  color: white;
+  font-size: 1vw;
+  font-weight: 600;
+  background: radial-gradient(circle, #2cc429 0%, #236213 100%);
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+}
+.controls .buttons:hover {
   transition: all 0.2s ease-in-out;
   transform: scale(1.2);
 }

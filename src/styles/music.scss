@@ -1,11 +1,43 @@
-#play-button{
-  width: 2vw;
+
+
+.controls{
+  display: flex;
+  justify-content: space-around;
   position: absolute;
-  bottom: 3vw;
-  right: 49.5vw;
+  width: 17vw;
+  bottom: 3%;
+  left: 40%;
+  align-items: center;
+
+  .clear-plate{
+    padding: 1vw;
+    border-radius: 8px;
+    font-size: 1vw;
+    font-weight: 600;
+    color: white;
+    background: radial-gradient(circle, rgb(140 140 140) 0%, rgb(66 66 66) 100%);
+    text-shadow: 3px 4px 5px #212121;
+  }
+  
+  #play-button{
+    width: 2vw;
+  }
+
+  .eat-food{
+    padding: 1vw;
+    width: 3vw;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    font-size: 1vw;
+    font-weight: 600;
+    background: radial-gradient(circle, #2cc429 0%, #236213 100%);
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+  }
+
+  .buttons:hover{
+    transition: all .2s ease-in-out;
+    transform: scale(1.2);
+  }
 }
 
-#play-button:hover{
-  transition: all .2s ease-in-out;
-  transform: scale(1.2);
-}
