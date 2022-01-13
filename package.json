@@ -1,7 +1,7 @@
 {
   "name": "cho-plate-project",
   "version": "1.0.0",
-  "description": "Background:\r 'It's CHO-Plate!' is a simple interactive game where users are able to interact with to build a healthy meal plate exploring USDA's MyPlate and carbohydrate counting for diabetics.",
+  "description": "Background:\r 'It's CHO-Plate!' is a simple interactive game for exploring the fundamentals of carbohydrate counting for diabetic management",
   "main": "index.js",
   "browserslist": [
     "defaults"
