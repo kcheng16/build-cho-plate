@@ -124,9 +124,9 @@ document.addEventListener("DOMContentLoaded",() => {
   });
 
   //Eat food================================================
-  const eatButton = document.getElementById("eat-food");
+  const eatButton = document.getElementsByClassName("eat-food");
 
-  eatButton.addEventListener("click", function(){ 
+  eatButton[0].addEventListener("click", function(){ 
     let correctAnswer = false
 
     switch (currentLevel){
@@ -240,7 +240,7 @@ document.addEventListener("DOMContentLoaded",() => {
 
 
   //Clear plate/empty <img>: <li>=========================
-  const clearPlate = document.getElementById("clear-plate");
+  const clearPlate = document.getElementsByClassName("clear-plate");
 
   function clearPlateFunction(){
     for (let i = plateUl.children.length - 1; i >= 0; i--) {
@@ -268,7 +268,7 @@ document.addEventListener("DOMContentLoaded",() => {
     plate2.style = 'display: none';
   };
 
-  clearPlate.addEventListener("click", clearPlateFunction);
+  clearPlate[0].addEventListener("click", clearPlateFunction);
 
   //Carb Max setting========================================
   const carbMaxDiv = document.getElementsByClassName('carb-max');
