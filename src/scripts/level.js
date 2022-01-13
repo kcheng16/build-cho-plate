@@ -41,7 +41,6 @@ const level = {
       'baked potato', 
       'spaghetti with meat sauce', 
       'half spaghetti with meat sauce',
-      'greek salad (no dressing)',
       'half-orange, navel',
       'tuna sandwich'
     ]
@@ -54,8 +53,9 @@ const level = {
       'white bread', 
       "half spaghetti with meat sauce",
       'broccoli, cooked with oil',
-      'half-orange, navel',
+      'orange, navel',
       'fruit salad (peach and pear and apricot and pineapple and cherry)',
+      'roast beef'
     ],
     carbMax: 999,
     answer: [
@@ -165,7 +165,7 @@ const level = {
       'white rice', 
       "refried beans", 
       "baked potato", 
-      'white bread', 
+      'grilled mushroom',
       "half spaghetti with meat sauce",
       'broccoli, cooked with oil',
       'roast beef',

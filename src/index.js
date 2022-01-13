@@ -16,7 +16,6 @@ var currentLevel = 1;
 var carbMax = level[currentLevel].carbMax;
 var carbCount = 0;
 var kcal = 0;
-var plate = document.getElementById("plate");
 
 //populating food bank==========================
 let li, img;
@@ -148,12 +147,13 @@ level[currentLevel].food.forEach(itemName => {
 
       case 7:
       case 8:
+        if (carbCount === carbMax) return goToNextLevel();
+        break;
+
       case 9:
-      if (carbCount <= carbMax){
-        goToNextLevel()
-      }
-      break;
-      
+        if (plateUl.children.length === 7 && carbCount === carbMax) return goToNextLevel();
+        break;
+
       default:
         clearPlateFunction()
         return alert("Not quite right. Try again!")

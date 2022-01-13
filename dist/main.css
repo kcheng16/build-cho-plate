@@ -2,17 +2,10 @@
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/carbcount.css ***!
   \********************************************************************************************************/
 .carb-count {
-  /* background-image: url("/images/number-counter.png");
-  background-repeat: no-repeat;
-  background-position: center; 
-  background-size: 150px; */
-
   position: absolute;
-  top: 25%;
+  top: 27%;
   left: 47%;
-  
-  font-size: 4vmax;
-  text-align: center;
+  font-size: 3vw;
 }
 
 #carbctimg {
@@ -141,9 +134,7 @@
   position: absolute;
   top: 27%;
   left: 30%;
-  
-  font-size: 4vmax;
-  text-align: center;
+  font-size: 3vw;
 }
 
 #maxcarb {
@@ -160,9 +151,8 @@
   \***************************************************************************************************/
 .kcal {
   position: absolute;
-  top: 26%;
+  top: 27%;
   left: 64%;
-
   font-size: 2.5vw;
 }
 

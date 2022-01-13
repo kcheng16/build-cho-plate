@@ -45,7 +45,7 @@ const food = {
   'broccoli, cooked with oil': {
     size: "1cup",
     kcal: 98,
-    carb: 0.5,
+    carb: 0,
     img: './images/broccoli.png'
   },
   
@@ -83,6 +83,13 @@ const food = {
     kcal: 124,
     carb: 0,
     img: './images/chicken-breast.png'
+  },
+
+  'grilled mushroom': {
+    size: "1/4c",
+    kcal: 8,
+    carb: 0,
+    img: './images/grilled-mushroom.png'
   },
 
   "refried beans": {//16103
