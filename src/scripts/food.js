@@ -10,7 +10,7 @@ const food = {
     size: "100g",
     kcal: 61,
     carb: 1,
-    img: './images/gala-apple.png'
+    img: 'images/gala-apple.png'
   },
 
   'banana':  {//9040

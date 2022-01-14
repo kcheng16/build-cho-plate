@@ -6,6 +6,7 @@
   left: 52%;
 
   cursor: pointer;
+  border: 2px dashed white;
 }
 
 #eat-food:hover{
