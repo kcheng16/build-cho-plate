@@ -1,4 +1,4 @@
-[Build-CHO-Plate Live Link](https://kcheng16.github.io/cho-plate-project/)
+[Build-CHO-Plate Live Link](https://kcheng16.github.io/build-cho-plate/)
 ![buildchoplate](https://user-images.githubusercontent.com/88124383/149829999-d4eee77b-b57c-4a6b-b487-e775daacbdd0.png)
 # Background:
 'Build CHO-Plate!' is a simple interactive game where users are able to interact with to build a healthy meal plate exploring carbohydrate counting for diabetics. 
