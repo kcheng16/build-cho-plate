@@ -347,6 +347,39 @@
   transform: scale(1.2);
 }
 
+.alert-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border-radius: 10px;
+  width: 40vw;
+  height: 8vh;
+  z-index: 15;
+  border: 10px solid red;
+  background-color: #fffc93;
+}
+.alert-modal i {
+  position: absolute;
+  right: -1vw;
+  top: -1vw;
+  background-color: #ffffff;
+  border-radius: 50px;
+  font-size: 2vw;
+  cursor: pointer;
+}
+.alert-modal i:hover {
+  color: red;
+}
+.alert-modal .alert {
+  padding: 1vw 0;
+  font-size: 1.2vw;
+  text-align: center;
+  font-weight: 600;
+  color: red;
+}
+
 body {
   background-image: url("./../images/background.jpg");
   background-size: 300px;

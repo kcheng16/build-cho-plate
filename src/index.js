@@ -2,6 +2,7 @@ import food from "./scripts/food";
 import level from "./scripts/level";
 import {setBackgroundMusic} from "./scripts/background_music";
 import {setModal} from "./scripts/modal";
+import {openAlert} from "./scripts/alert";
 
 document.addEventListener("DOMContentLoaded",() => {
   setBackgroundMusic()
@@ -66,15 +67,14 @@ document.addEventListener("DOMContentLoaded",() => {
     plateUl.appendChild(draggingEle2);
     
     if (plateUl.children.length === 5){
-      alert("That's a lot of food! Do you need a second plate?");
-
       let plate2 = document.getElementById('plate2');
       plate2.style = 'display: true';
+      openAlert("That's a lot of food! Here's a second plate.")
     }
 
     if (plateUl.children.length === 9){
       clearPlateFunction()
-      alert("Hmm...that answer doesn't seem correct. Let's try again!")
+      openAlert("Hmm...that answer doesn't seem correct. Let's try again!")
     }
     
     let foodId = draggingEle2.firstChild.id;
@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded",() => {
     carbCtDiv[0].innerText = carbCount;
 
     if (parseInt(carbCtDiv[0].innerText) > carbMax){
-      alert('Careful! The carb count is higher than the maximum for this meal.');
+      openAlert('Careful! The carb count is higher than the maximum for this meal.');
     }
 
     //=====adding kcal
@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded",() => {
         for (let i = 0; i < plateUl.children.length; i++) {
           correctAnswer = level[currentLevel].answer.includes(plateUl.children[i].children[0].id) && level[currentLevel].answer.length === plateUl.children.length
         }
-        correctAnswer ? goToNextLevel() : (clearPlateFunction(), alert("You're so close! Try again"))
+        correctAnswer ? goToNextLevel() : (clearPlateFunction(), openAlert("You're so close! Try again"))
         break;
 
       case 7:
@@ -159,7 +159,7 @@ document.addEventListener("DOMContentLoaded",() => {
 
       default:
         clearPlateFunction()
-        return alert("Not quite right. Try again!")
+        return openAlert("Not quite right. Try again!")
     }
   });
   
