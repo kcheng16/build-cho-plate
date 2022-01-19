@@ -214,11 +214,11 @@ document.addEventListener("DOMContentLoaded",() => {
 
       //=========eat food sound (check if audio is on)
       const music = document.getElementById("music")
-      let sound = new Audio("images/sounds/chomp.wav");
+      let chomp = new Audio("images/sounds/chomp.wav");
       
       if (!music.paused){
-        sound.volume = 0.3
-        sound.play();
+        chomp.volume = 0.5
+        chomp.play();
       }
     });
 
@@ -243,11 +243,17 @@ document.addEventListener("DOMContentLoaded",() => {
     });
   }
 
-
   //Clear plate/empty <img>: <li>=========================
   const clearPlate = document.getElementsByClassName("clear-plate");
 
   function clearPlateFunction(){
+    let pop = new Audio("images/sounds/pop.wav")
+    let music = document.getElementById("music")
+    if (!music.paused){
+      pop.volume = 0.5
+      pop.play();
+    }
+    
     for (let i = plateUl.children.length - 1; i >= 0; i--) {
       let removed = plateUl.children[i]
       plateUl.children[i].remove();
