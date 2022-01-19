@@ -8,7 +8,7 @@ export function setBackgroundMusic(){
       music.volume = 0.5
       music.loop = true
       music.play()
-
+      console.log("playing music")
       playButton.src = "images/audio-on.png"
     } else {
       music.pause()
