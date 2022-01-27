@@ -19,12 +19,13 @@ document.addEventListener("DOMContentLoaded",() => {
   let li, img;
 
   level[currentLevel].food.forEach(itemName => {
+    //creates <li> to attach food image to
     li = document.createElement("li");
     li.setAttribute('draggable', true);
     li.setAttribute('class', 'draggable');
     
+    //creates new food item image
     img = document.createElement('img');
-    
     if (Object.keys(food).includes(itemName)){
       img.id = `${itemName}`;
       img.src = food[itemName].img;
@@ -34,14 +35,14 @@ document.addEventListener("DOMContentLoaded",() => {
     foodBank.appendChild(li);
   });
 
-  //drag foods============================================
+  //drag foods=======================================================
   const draggables = document.querySelectorAll('.draggable');
-  
+  //upon beginning of drag, item will have class 'dragging'; when the drag ends, item will lose the class 'dragging'
   draggables.forEach(draggable => {
     draggable.addEventListener('dragstart', () => {
       draggable.classList.add('dragging');
     });
-
+    
     draggable.addEventListener('dragend', () => {
       draggable.classList.remove('dragging');
     });
